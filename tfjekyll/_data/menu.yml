@@ -1,0 +1,42 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: about 
+    entries:
+      - detail: Top interest? -> The feeling when the impossible becomes possible with code
+      - detail: github repo
+        url: https://github.com/tfreese56
+      - detail: Studied at Buena Vista University in Storm Lake, IA
+        entries:
+            - detail: Computer Science & Mathematics
+
+  - title: software projects
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
+
+  - title: public interests
+    entries:
+        - detail: Code bettering the world
+        - detail: Data privacy
+        - detail: It's all about the people
+
+  - title: personal interests
+    entries:
+        - detail: Reading books from Principles by Ray Dalio to textbooks learning new comp sci or math topics
+        - detail: Finances
+        - detail: Being around water, taking awesome photos of nature
+        - detail: Finding rapture in ideas and moments that melt my mind of understanding
+  
+  - title: connect
+    entries:
+        - detail: Reach out if you think I could be a great asset
+          entries:
+            - detail: Email
+            - detail: GitHub
+              url: https://github.com/tfreese56
+            - detail: LinkedIn?
+        - italics_detail: thanks!

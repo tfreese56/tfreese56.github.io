@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<header>
+  <img src="{{ site.headshot }}" alt="headshot img" style="width: 35%; height: 35%; border-radius: 15%"/>
+  <h1 style="text-align: center; margin-bottom: 0px;">{{ site.title }}</h1>
+  {%-if site.theme_config.show_description-%}
+    <p style="text-align: center;">{{ site.description }}</p>
+  {%-endif-%}
+</header>
+
+{%-include menu_item.html collection=site.data.menu.entries-%}
+
+{{ content }}
