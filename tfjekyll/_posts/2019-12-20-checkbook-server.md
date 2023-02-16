@@ -21,6 +21,8 @@ Client and server communicated in a request->response manner. The client had thi
 ### Cryptography 
 Crypto experience was essentially none at the writing of this in 2019. Humbly admitting, Stack Overflow led me to a design using *two* AES keys (so, twice encrypted) message sent over the wire from my remote client to the server. The AES keys were exchanged via the public key cryptography algorithm RSA.
 
+Considering any of my crypto practices *sound* is likely not truthy. In the least, I felt comfortable enough exchanging my financial information over the wire.
+
 Here is where the AES keys are set having been decrypted with the private RSA key:
 
 ```java
