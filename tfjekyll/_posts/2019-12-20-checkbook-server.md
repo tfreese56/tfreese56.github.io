@@ -5,7 +5,6 @@ date:   2019-12-20 08:00:00 -0600
 categories: java
 tags: java crypto
 ---
-### Intro 
 [Checkbook](/java/2020/02/17/checkbook.html) used this server written in Java <img src="/img/java.png" style="width: 32px; height: 32px; display: inline-block;"/> as the API to a central MySQL <img src="/img/mysql.png" style="width: 32px; height: 32px; display: inline-block;"/> database storing transaction data. Symmetric AES and asymmetric RSA keys are used to communicate with the remote client. 
 ![](/img/encrypt.png "Encrypted")
 
