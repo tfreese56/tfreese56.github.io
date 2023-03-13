@@ -8,10 +8,10 @@ Hi! A bit more about me.
 ## What you already know
 
 * problem solving programming & full stack development
-* from the midwest (<img src="/img/iowa.png" id="inline-icon"/>)
-* studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" id="inline-icon"/>
+* from the midwest (<img src="/img/iowa.png" class="inline-icon"/>)
+* studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" class="inline-icon"/>
   * Computer Science & Mathematics
-* enjoy the experience studying how things work <img src="/img/critical-thinking.png" id="inline-icon"/>
+* enjoy the experience studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
 
 ## What's more
 
@@ -29,10 +29,10 @@ And finally, in a class of their own, works by Douglas Hofstadter:
 * *I Am a Strange Loop*
 
 ### I have traveled to Dominican Republic, Seattle, WA & New Zealand
-<img src="/img/dominican-republic.png" id="inline-icon"/>&nbsp;Dominican Republic was with a great friend in high school and his parents. Very thankful for this experience.
+<img src="/img/dominican-republic.png" class="inline-icon"/>&nbsp;Dominican Republic was with a great friend in high school and his parents. Very thankful for this experience.
 <div class="about-images">
-<img class="myImg" src="../img/dr1.jpg" alt="Dominican Republic beach" style="width:100%;max-width:300px;">
-<img class="myImg" src="../img/dr2.jpg" alt="Dominican Republic driving go kart in the mud" style="width:100%;max-width:300px;">
+<img class="myImg" src="/img/dr1.jpg" alt="Dominican Republic beach" style="width:100%;max-width:300px;">
+<img class="myImg" src="/img/dr2.jpg" alt="Dominican Republic driving go kart in the mud" style="width:100%;max-width:300px;">
 </div>
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -42,20 +42,20 @@ And finally, in a class of their own, works by Douglas Hofstadter:
 </div>
 
 
-<img src="/img/space-needle.png" id="inline-icon"/>&nbsp;Seattle, Washington was on behalf of being selected to be part of a six student team of developers. In Seattle, we made an app with the help of two professors over the course of two and a half weeks. We lived and breathed Seattle visiting tourist sites and visiting tech companies. [School news article](https://www.bvu.edu/news/startup-seattle-lands-bvu-students-google-microsoft-amazon-and-more) about the trip.
+<img src="/img/space-needle.png" class="inline-icon"/>&nbsp;Seattle, Washington was on behalf of being selected to be part of a six student team of developers. In Seattle, we made an app with the help of two professors over the course of two and a half weeks. We lived and breathed Seattle visiting tourist sites and visiting tech companies. [School news article](https://www.bvu.edu/news/startup-seattle-lands-bvu-students-google-microsoft-amazon-and-more) about the trip.
 <div class="about-images">
-<img class="myImg" src="../img/seattle1.jpg" alt="Seattle cityscape behind me" style="width:100%;max-width:300px;">
-<img class="myImg" src="../img/seattle2.jpg" alt="Seattle hiking trip" style="width:100%;max-width:300px;">
+<img class="myImg" src="/img/seattle1.jpg" alt="Seattle cityscape behind me" style="width:100%;max-width:300px;">
+<img class="myImg" src="/img/seattle2.jpg" alt="Seattle hiking trip" style="width:100%;max-width:300px;">
 </div>
 
-<img src="/img/new-zealand.png" id="inline-icon"/>&nbsp;New Zealand is easily the trip of a life time. Again, spent two and a half weeks with fellow college classmates and two professors traveling from Auckland, NZ to Queensland, NZ. I can't put what this trip means to me into words. This opportunity was incredible and I cannot wait to go back some day.
+<img src="/img/new-zealand.png" class="inline-icon"/>&nbsp;New Zealand is easily the trip of a life time. Again, spent two and a half weeks with fellow college classmates and two professors traveling from Auckland, NZ to Queensland, NZ. I can't put what this trip means to me into words. This opportunity was incredible and I cannot wait to go back some day.
 <div class="about-images">
-<img class="myImg" src="../img/nz1.jpg" alt="New Zealand road trip" style="width:100%;max-width:300px;">
-<img class="myImg" src="../img/nz2.jpg" alt="Auckland, New Zealand behind me" style="width:100%;max-width:300px;">
+<img class="myImg" src="/img/nz1.jpg" alt="New Zealand road trip" style="width:100%;max-width:300px;">
+<img class="myImg" src="/img/nz2.jpg" alt="Auckland, New Zealand behind me" style="width:100%;max-width:300px;">
 </div>
 
 ### I enjoy finances
-<img src="/img/cash.gif" id="inline-icon"/>&nbsp;I've always been interested in personal finance and money. To me, money is a tool to go cool places like ^^ and expand oneself. I believe money makes you more of what you already are. 
+<img src="/img/cash.gif" class="inline-icon"/>&nbsp;I've always been interested in personal finance and money. To me, money is a tool to go cool places like ^^ and expand oneself. I believe money makes you more of what you already are. 
 
 I use [GnuCash](https://www.gnucash.org/) to manage my personal finances; really awesome in-depth program.
 
@@ -63,7 +63,7 @@ I use [GnuCash](https://www.gnucash.org/) to manage my personal finances; really
 ### I rode dirtbikes
 Riding dirtbikes was a huge past time of mine when I was younger.
 <div style="display: flex; flex-direction: row;">
-<img class="myImg" src="../img/dirtbike1.jpg" alt="Jumping my dirtbike" style="width:100%;max-width:300px;">
+<img class="myImg" src="/img/dirtbike1.jpg" alt="Jumping my dirtbike" style="width:100%;max-width:300px;">
 </div>
 
 
@@ -87,7 +87,7 @@ I'm super grateful for all I've poured into life so far. My goal is to keep movi
 </ul>
 </div>
 
-<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="/css/styles.css">
 
 <style>
 .about-images {
