@@ -5,13 +5,13 @@ entries:
   - title: about 
     entries:
       - detail: problem solving programming & full stack development
-      - detail: from the midwest (<img src="/img/iowa.png" id="inline-icon"/>)
+      - detail: from the midwest (<img src="/img/iowa.png" class="inline-icon"/>)
 #      - detail: github repo
 #        url: https://github.com/tfreese56
-      - detail: studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" id="inline-icon"/>
+      - detail: studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" class="inline-icon"/>
         entries:
             - detail: Computer Science & Mathematics
-      - detail: enjoy the experience studying how things work <img src="/img/critical-thinking.png" id="inline-icon"/>
+      - detail: enjoy the experience studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
       - detail: more...
         url: about
 
