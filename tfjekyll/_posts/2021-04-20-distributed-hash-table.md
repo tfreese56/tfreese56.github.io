@@ -71,5 +71,7 @@ Best.
 <div style="font-size: 10px;">
 <a target="_blank" href="https://icons8.com/icon/13441/python">Python</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>
-DHT <a target="_blank" href="https://sujithjay.com/public/DHT-Dynamo.png">visualization</a>
+DHT chord <a target="_blank" href="https://tristanpenman.com/blog/images/implementing-a-dht-with-scala-and-akka/chord-route@2x.png">visualization</a>
+<br/>
+DHT node <a target="_blank" href="https://sujithjay.com/public/DHT-Dynamo.png">visualization</a>
 </div>
