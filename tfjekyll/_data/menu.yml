@@ -4,12 +4,16 @@
 entries:
   - title: about 
     entries:
-      - detail: Top interest? -> The feeling when the impossible becomes possible with code
-      - detail: github repo
-        url: https://github.com/tfreese56
-      - detail: Studied at Buena Vista University in Storm Lake, IA
+      - detail: problem solving programming & full stack development
+      - detail: from the midwest (<img src="/img/iowa.png" id="inline-icon"/>)
+#      - detail: github repo
+#        url: https://github.com/tfreese56
+      - detail: studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" id="inline-icon"/>
         entries:
             - detail: Computer Science & Mathematics
+      - detail: enjoy the experience studying how things work <img src="/img/critical-thinking.png" id="inline-icon"/>
+      - detail: more...
+        url: about
 
   - title: software projects
     post_list:
@@ -40,3 +44,9 @@ entries:
               url: https://github.com/tfreese56
             - detail: LinkedIn?
         - italics_detail: thanks!
+        - detail: --------
+        - detail: Links
+          entries:
+            - detail: <a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            - detail: <a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            - detail: <a target="_blank" href="https://icons8.com/icon/54383/critical-thinking">Critical Thinking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
