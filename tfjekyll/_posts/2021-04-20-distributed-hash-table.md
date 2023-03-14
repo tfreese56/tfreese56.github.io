@@ -5,7 +5,7 @@ date:   2021-04-20 08:00:00 -0600
 categories: python 
 ---
 <link rel="stylesheet" href="/css/styles.css">
-In Networks & Distributed Systems class, we were assigned to write a Distributed Hash Table in Python <img src="/img/python.png" class="inline-icon"/> after lots of discussion in class. The DHT had the following data type definitions (Provided by [Dr. Nathan Backman](https://www.bvu.edu/academics/faculty/nathan-backman) of [Buena Vista University](https://www.bvu.edu/)).
+In Networks & Distributed Systems class, we were assigned to write a Distributed Hash Table (DHT) in Python <img src="/img/python.png" class="inline-icon"/>. The DHT protocol was provided by [Dr. Nathan Backman](https://www.bvu.edu/academics/faculty/nathan-backman) of [Buena Vista University](https://www.bvu.edu/).
 
 # DHT
 <img src="/img/chord-route.png" alt="DHT chord route" style="width: 35%; height: 35%; margin-bottom: 20px;"/>
@@ -34,7 +34,7 @@ As mentioned on the [Chat Channels](/python/2020/05/13/chat-channels.html) page,
   * storing backups of data with predecessors in case sudden removal of a node
 
 ### Explanation
-Hazelcast explains it best:
+I think [Hazelcast's](https://hazelcast.com/glossary/distributed-hash-table/) definition explains it best:
 
 <img src="/img/hazelcast-expl.png" alt="Hazelcast dht explanation"/>
 
