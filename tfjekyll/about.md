@@ -75,16 +75,20 @@ I'm super grateful for all I've poured into life so far. My goal is to keep movi
 <blockquote>"You can never represent yourself totally .... to seek self-knowledge is to embark on a journey which ... will always be incomplete, cannot be charted on a map, will never halt, cannot be described." ~ Douglas Hofstadter</blockquote>
 
 ##### Links
-<div style="font-size: 12px;">
-<ul>
-<li><a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
-<li><a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
-<li><a target="_blank" href="https://icons8.com/icon/54383/critical-thinking">Critical Thinking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
-<li><a target="_blank" href="https://icons8.com/icon/37270/dominican-republic">Dominican Republic</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
-<li><a target="_blank" href="https://icons8.com/icon/L1P8RSuAFQ59/space-needle">Space Needle</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
-<li><a target="_blank" href="https://icons8.com/icon/se42E21FtbEZ/new-zealand">New Zealand</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
-<li><a target="_blank" href="https://icons8.com/icon/AJR21EkCU02R/cash">Cash</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
-</ul>
+<div style="font-size: 10px;">
+<a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/54383/critical-thinking">Critical Thinking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/37270/dominican-republic">Dominican Republic</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/L1P8RSuAFQ59/space-needle">Space Needle</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/se42E21FtbEZ/new-zealand">New Zealand</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/AJR21EkCU02R/cash">Cash</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 </div>
 
 <link rel="stylesheet" href="/css/styles.css">
