@@ -6,7 +6,7 @@ categories: django
 ---
 [Checkbook](/java/2020/02/17/checkbook.html) but a website version. I wanted to manage my money from a desktop & mobile device from anywhere. Thus, I migrated my Checkbook project to a Django web application built with the following technologies.
 
-There were two docker containers: one for the production running Checkbook and one for a MySQL database.
+Two docker containers ran in the production environment: one for running Checkbook and one for a MySQL database.
 
 I used self-signed certificates with Nginx to secure the communication with TLSv1.3.
 
@@ -43,7 +43,7 @@ I used self-signed certificates with Nginx to secure the communication with TLSv
 ### Search page results
 *Amounts and descriptions redacted.*
 
-Note, the following statistics could be generated over a specified time period.
+The following statistics could be generated over a specified time period.
 The number of transactions found is also reported.
 ```
 Greatest income - largest value of income received during time frame
