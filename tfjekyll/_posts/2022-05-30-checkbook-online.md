@@ -41,7 +41,7 @@ I used self-signed certificates with Nginx to secure the communication with TLSv
 <img src="/img/tfcb-search.png" alt="tfcb search"/>
 
 ### Search page results
-*Amounts and descriptions redacted.*
+*Amounts, descriptions, and dates redacted.*
 
 The following statistics could be generated over a specified time period.
 The number of transactions found is also reported.
