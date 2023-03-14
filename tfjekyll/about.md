@@ -72,7 +72,7 @@ Thanks for at least scrolling this far!
 
 I'm super grateful for all I've poured into life so far. My goal is to keep moving towards greater things that will take me places and teach me ways I never knew before. 
 
-<blockquote>"You can never represent yourself totally .... to seek self -knowledge is to embark on a journey which ... will always be incomplete, cannot be charted on a map, will never halt, cannot be described." ~ Douglas Hofstadter</blockquote>
+<blockquote>"You can never represent yourself totally .... to seek self-knowledge is to embark on a journey which ... will always be incomplete, cannot be charted on a map, will never halt, cannot be described." ~ Douglas Hofstadter</blockquote>
 
 ##### Links
 <div style="font-size: 12px;">
