@@ -2,6 +2,8 @@
 layout: post
 title:  "Chat Channels"
 date:   2020-05-13 08:00:00 -0600
+subtitle: "Chat platform using decentralized storage"
+thumbnail: "/img/cc-many.png"
 categories: python 
 ---
 <link rel="stylesheet" href="/css/styles.css">

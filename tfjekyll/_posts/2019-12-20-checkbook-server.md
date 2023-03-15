@@ -2,6 +2,8 @@
 layout: post
 title:  "Checkbook Server"
 date:   2019-12-20 08:00:00 -0600
+subtitle: "Checkbook remote server using AES"
+thumbnail: "/img/server-key.png"
 categories: java
 tags: java crypto
 ---
