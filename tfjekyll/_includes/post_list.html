@@ -15,7 +15,7 @@
     {%- for post in posts limit: include.limit -%}
         <div class="sfw-project">
             {%- if post.thumbnail -%}
-            <div class="sfw-project-thumbnail">
+            <div onclick="window.location='{{ post.url | relative_url }}'" class="sfw-project-thumbnail">
                 <img src="{{ post.thumbnail }}" class="sfw-project-img"/>
             </div>
             {%- endif -%}
@@ -63,14 +63,26 @@
     flex-wrap: wrap;
 }
 .sfw-project-thumbnail:hover ~ .sfw-project-text {
-    background: white;
+    background: dimgrey;
+}
+.sfw-project-thumbnail:hover ~ .sfw-project-text-subtitle {
+    color: white;
 }
 .sfw-project-text:hover {
-    background: white;
+    background: dimgrey;
     cursor: pointer;
+}
+.sfw-project-text:hover ~ .sfw-project-text-subtitle {
+    color: white;
 }
 .sfw-project-text-title:hover {
     text-decoration: underline black dotted 2px;
+}
+.sfw-project-text-title:hover ~ .sfw-project-text-subtitle {
+    color: white;
+}
+.sfw-project-text-subtitle:hover {
+    color: white;
 }
 .sfw-project {
     max-width: 256px; 
@@ -93,10 +105,11 @@
     border-radius: 10px;
 }
 .sfw-project-text {
-    background: whitesmoke;
-    border-radius: 0px 0px 25px 25px;
+    background: black;
+    border-radius: 0px 0px 20px 20px;
 }
 .sfw-project-text-title {
+    color: white;
     font-family: 'Courier New', monospace; 
     font-size: 20px;
     margin-top: 7px;
