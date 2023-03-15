@@ -12,7 +12,7 @@ entries:
         entries:
             - detail: Computer Science & Mathematics
       - detail: enjoy the experience studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
-      - detail: more...
+      - detail: <img src="/img/double-right.gif" class="inline-icon"/>  more...
         url: about
 
   - title: software projects
@@ -48,6 +48,7 @@ entries:
       - small_detail: <a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
       - small_detail: <a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
       - small_detail: <a target="_blank" href="https://icons8.com/icon/54383/critical-thinking">Critical Thinking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      - small_detail: <a target="_blank" href="https://icons8.com/icon/rSpyVW0zHkSF/double-right">Double Right</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
       - small_detail: <a target="_blank" href="https://icons8.com/icon/IU9BMZfRqyeY/encrypted">Encrypted</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
       - small_detail: <a target="_blank" href="https://tristanpenman.com/blog/images/implementing-a-dht-with-scala-and-akka/chord-route@2x.png">Chord route</a>
       - small_detail: <a target="_blank" href="https://icons8.com/icon/12212/hdd">HDD</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
