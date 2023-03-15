@@ -29,7 +29,7 @@
     {%- endfor -%}
     {%- if include.show_more and limit_exceeded -%}
         <div class="sfw-project">
-            <div class="sfw-project-thumbnail">
+            <div onclick="window.location='{{ include.show_more_url }}'" class="sfw-project-thumbnail">
                 <img src="/img/code.gif" alt="code gif" class="sfw-project-img"/>
             </div>
             <div onclick="window.location='{{ include.show_more_url }}'" class="sfw-project-text">
