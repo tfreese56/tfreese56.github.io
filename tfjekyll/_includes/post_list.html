@@ -29,8 +29,8 @@
     {%- endfor -%}
     {%- if include.show_more and limit_exceeded -%}
         <div class="sfw-project">
-            <div onclick="window.location='{{ include.show_more_url }}'" class="sfw-project-thumbnail">
-                <img src="/img/code.gif" alt="code gif" class="sfw-project-img"/>
+            <div onclick="window.location='{{ include.show_more_url }}'" class="see-more-thumbnail">
+                <img src="/img/code.gif" alt="code gif"/>
             </div>
             <div onclick="window.location='{{ include.show_more_url }}'" class="sfw-project-text">
                 <p class="sfw-project-text-title">{{ include.show_more_text | default: "Show more..." }}</p>
@@ -96,6 +96,11 @@
 .sfw-project-thumbnail {
     border-bottom: 1px solid black;
     border-radius: 25px 25px 0px 0px;
+    max-width: 256px;
+    max-height: 128px;
+}
+.see-more-thumbnail {
+    border-bottom: 1px solid black;
     max-width: 256px;
     max-height: 128px;
 }
