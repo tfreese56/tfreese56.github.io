@@ -32,10 +32,10 @@ My Stream Processor has the following capabilities\*:
 <img src="/img/sp-summary.png" alt="sp summary"/>
 
 ### Ingest Data from Anywhere
-Data could be retrieved in any way, from what ever source may be producing a stream of data. Structured or unstructured, what matters is getting the data to the Stream Processor using the [Stream Emitter](/java/2021/03/04/stream-emitter.html). From there, it is up to the processing engine to process it.
+Data can be retrieved in theoretically any way. The only requirement is it needs to be ingested into the Stream Processor from the [Stream Emitter](/java/2021/03/04/stream-emitter.html). Structured or unstructured, what matters is getting the data to the Stream Processor. From there, it is up to the processing engine to process it.
 
 ### Arbitrary Processing Code
-Implementing this Stream Processor requires the developer to have a workflow design in mind. Workflows and processing is specific to each stream of data. Thus, the reason I wanted to write an extensible product.
+Implementing this Stream Processor is on the developer to implement their workflow. Workflows and processing is specific to each stream of data. Thus, the reason I wanted to write an extensible product.
 
 What does arbitrary processing code mean, *exactly*?
 
@@ -51,12 +51,12 @@ My Stream Processor has the ability to have concurrent threads working on the sa
 ### Operators
 Operators are the nodes working on processing the data and can be chained in a series to extend the processing chain. The processing chain is modeled as the workflow of data processing.
 
-<img src="/img/fish.png" class="inline-icon" style="width: 32px; height: 32px;"/> Your may want to keep track of how many fish in total you've seen. At some point in your workflow, you'd write an operator keeping track of simply that.
+<img src="/img/fish.png" class="inline-icon" style="width: 32px; height: 32px;"/> You may want to keep track of how many fish in total you've seen. At some point in your workflow, you'd write an operator keeping track of simply that.
 
 ### Search For Significant Conditions
-Operators capable of being written to alert (somehow notify the right person) of a significant event/set of events occuring in a stream. 
+Operators are capable of being written to alert (e.g. send notifications or take action themselves) on a significant event/set of events occuring in a stream. 
 
-<img src="/img/thermometer.png" class="inline-icon" style="width: 32px; height: 32px;"/> I may want to know if the temperature falls below a threshold. I could write an Operator to watch for such. 
+<img src="/img/thermometer.png" class="inline-icon" style="width: 32px; height: 32px;"/> I may want to know if the temperature falls below a threshold. I could write an Operator to watch for this.
 
 <img src="/img/fish.png" class="inline-icon" style="width: 32px; height: 32px;"/> In the lake, you might want to know if you see more than 30 fish per hour swimming by your sensor. An operator could be written to listen for such an event in the stream.
 
@@ -67,6 +67,16 @@ Best.
 
 ##### Links
 \**(taken from my presentation at [Buena Vista University](https://www.bvu.edu/))*
+<div style="font-size: 10px;">
+<br/>
+<a target="_blank" href="https://icons8.com/icon/49188/splunk">Splunk</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/13679/java">Java</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/poFZHQZ-CjsC/thermometer">Thermometer</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
+<a target="_blank" href="https://icons8.com/icon/16040/fish">Fish</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>
 
 <style>
 #splunk-icon {
