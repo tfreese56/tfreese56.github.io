@@ -11,6 +11,28 @@
 {%-endif-%}
 
 {%- if posts.size > 0 -%}
+    <ul>
+    {%- for post in posts limit: include.limit -%}
+        <li>
+            <div class="sfw-project">
+                {%- if post.thumbnail -%}
+                <div class="sfw-project-thumbnail">
+                    <img src="{{ post.thumbnail }}" alt="java logo" class="sfw-project-img"/>
+                </div>
+                {%- endif -%}
+                <div onclick="window.location='{{ post.url | relative_url }}'" class="sfw-project-text">
+                    <p class="sfw-project-text-title">{{ post.title }}</p>
+                    {%- if post.subtitle -%}
+                    <p class="sfw-project-text-subtitle">{{ post.subtitle }}</p>
+                    {%- endif -%}
+                </div>
+            </div>
+        </li>
+    {%- endfor -%}
+    {%- if include.show_more and limit_exceeded -%}
+        <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a></li>
+    {%- endif -%}
+<!--
   <ul>
     {%- for post in posts limit: include.limit -%}
         <li>
@@ -23,4 +45,59 @@
       <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a></li>
     {%- endif -%}
   </ul>
+-->
 {%- endif -%}
+
+<style>
+.sfw-project-thumbnail:hover ~ .sfw-project-text {
+    background: white;
+}
+.sfw-project-text:hover {
+    background: white;
+    cursor: pointer;
+}
+.sfw-project-text-title:hover {
+    text-decoration: underline black dotted 2px;
+}
+.sfw-project {
+    max-width: 256px; 
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sfw-project-thumbnail {
+    border-bottom: 1px solid black;
+    border-radius: 25px 25px 0px 0px;
+    max-width: 256px;
+    max-height: 128px;
+}
+.sfw-project-img {
+    max-width: 256px;
+    max-height: 128px;
+    border-radius: 10px;
+}
+.sfw-project-text {
+    background: whitesmoke;
+    border-radius: 0px 0px 25px 25px;
+}
+.sfw-project-text-title {
+    font-family: 'Courier New', monospace; 
+    font-size: 20px;
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 2px;
+}
+.sfw-project-text-subtitle {
+    font-family: 'Georgia', serif; 
+    font-size: 13px;
+    font-style: italic;
+    color: gray;
+    margin-top: 0px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 7px;
+}
+</style>
