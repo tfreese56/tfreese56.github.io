@@ -11,26 +11,32 @@
 {%-endif-%}
 
 {%- if posts.size > 0 -%}
-    <ul>
+    <div class="sfw-projects">
     {%- for post in posts limit: include.limit -%}
-        <li>
-            <div class="sfw-project">
-                {%- if post.thumbnail -%}
-                <div class="sfw-project-thumbnail">
-                    <img src="{{ post.thumbnail }}" alt="java logo" class="sfw-project-img"/>
-                </div>
-                {%- endif -%}
-                <div onclick="window.location='{{ post.url | relative_url }}'" class="sfw-project-text">
-                    <p class="sfw-project-text-title">{{ post.title }}</p>
-                    {%- if post.subtitle -%}
-                    <p class="sfw-project-text-subtitle">{{ post.subtitle }}</p>
-                    {%- endif -%}
-                </div>
+        <div class="sfw-project">
+            {%- if post.thumbnail -%}
+            <div class="sfw-project-thumbnail">
+                <img src="{{ post.thumbnail }}" class="sfw-project-img"/>
             </div>
-        </li>
+            {%- endif -%}
+            <div onclick="window.location='{{ post.url | relative_url }}'" class="sfw-project-text">
+                <p class="sfw-project-text-title">{{ post.title }}</p>
+                {%- if post.subtitle -%}
+                <p class="sfw-project-text-subtitle">{{ post.subtitle }}</p>
+                {%- endif -%}
+            </div>
+        </div>
     {%- endfor -%}
     {%- if include.show_more and limit_exceeded -%}
-        <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a></li>
+        <div class="sfw-project">
+            <div class="sfw-project-thumbnail">
+                <img src="/img/code.gif" alt="code gif" class="sfw-project-img"/>
+            </div>
+            <div onclick="window.location='{{ include.show_more_url }}'" class="sfw-project-text">
+                <p class="sfw-project-text-title">{{ include.show_more_text | default: "Show more..." }}</p>
+            </div>
+        </div>
+    </div>
     {%- endif -%}
 <!--
   <ul>
@@ -49,6 +55,13 @@
 {%- endif -%}
 
 <style>
+.sfw-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .sfw-project-thumbnail:hover ~ .sfw-project-text {
     background: white;
 }
@@ -66,6 +79,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 5px;
 }
 .sfw-project-thumbnail {
     border-bottom: 1px solid black;
