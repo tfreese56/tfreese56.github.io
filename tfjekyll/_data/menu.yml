@@ -12,14 +12,14 @@ entries:
         entries:
             - detail: Computer Science & Mathematics
       - detail: enjoy the experience studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
-      - detail: more...
+      - detail: <img src="/img/double-right.gif" class="inline-icon"/>  more...
         url: about
 
   - title: software projects
     post_list:
       limit: 5
       show_more: true
-      show_more_text: See archive...
+      show_more_text: See more...
       show_more_url: archive.html
 
   - title: public interests
@@ -42,11 +42,15 @@ entries:
             - detail: Email
             - detail: GitHub
               url: https://github.com/tfreese56
-            - detail: LinkedIn?
         - italics_detail: thanks!
-        - detail: --------
-        - detail: Links
-          entries:
-            - detail: <a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-            - detail: <a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-            - detail: <a target="_blank" href="https://icons8.com/icon/54383/critical-thinking">Critical Thinking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  - title: links
+    entries:
+      - small_detail: <a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      - small_detail: <a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      - small_detail: <a target="_blank" href="https://icons8.com/icon/54383/critical-thinking">Critical Thinking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      - small_detail: <a target="_blank" href="https://icons8.com/icon/rSpyVW0zHkSF/double-right">Double Right</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      - small_detail: <a target="_blank" href="https://icons8.com/icon/IU9BMZfRqyeY/encrypted">Encrypted</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      - small_detail: <a target="_blank" href="https://tristanpenman.com/blog/images/implementing-a-dht-with-scala-and-akka/chord-route@2x.png">Chord route</a>
+      - small_detail: <a target="_blank" href="https://icons8.com/icon/12212/hdd">HDD</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      - small_detail: <a target="_blank" href="https://giphy.com/gifs/technology-data-transfer-optical-fiber-l41YvpiA9uMWw5AMU">Data wires</a>
+      - small_detail: <a target="_blank" href="https://icons8.com/icon/mcCRHk2xvR7f/code">Code</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

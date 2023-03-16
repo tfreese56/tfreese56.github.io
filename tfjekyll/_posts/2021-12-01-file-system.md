@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "File System"
+subtitle: "A file system storing data"
+thumbnail: "/img/hdd.png"
 date:   2021-12-01 08:00:00 -0600
 categories: c 
 ---

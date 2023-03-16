@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Checkbook Online"
+subtitle: "Django-Python website for managing finances"
+thumbnail: "/img/tfcb-main.png"
 date:   2022-05-30 08:00:00 -0600
 categories: django
 ---

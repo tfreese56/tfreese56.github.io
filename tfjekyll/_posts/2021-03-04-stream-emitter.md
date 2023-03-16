@@ -2,6 +2,8 @@
 layout: post
 title:  "Stream Emitter"
 date:   2021-03-04 08:00:00 -0600
+subtitle: "Sending Events to a Stream Processor"
+thumbnail: "/img/radio-waves.png"
 categories: java 
 ---
 <link rel="stylesheet" href="/css/styles.css">

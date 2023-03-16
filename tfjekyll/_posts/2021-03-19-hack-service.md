@@ -2,6 +2,8 @@
 layout: post
 title:  "Hack Service"
 date:   2021-03-19 08:00:00 -0600
+subtitle: "SQL injection bank hack"
+thumbnail: "/img/incredi-safe-bank.png"
 categories: python 
 ---
 <link rel="stylesheet" href="/css/styles.css">

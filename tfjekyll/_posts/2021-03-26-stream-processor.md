@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Processing a Stream of Endless Data"
+subtitle: "Building a stream processor"
+thumbnail: "/img/data-stream.gif"
 date:   2021-03-26 08:00:00 -0600
 categories: java 
 ---

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Distributed Hash Table"
+subtitle: "Decentralized storage system"
+thumbnail: "/img/chord-route.png"
 date:   2021-04-20 08:00:00 -0600
 categories: python 
 ---

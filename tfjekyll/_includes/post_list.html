@@ -11,6 +11,34 @@
 {%-endif-%}
 
 {%- if posts.size > 0 -%}
+    <div class="sfw-projects">
+    {%- for post in posts limit: include.limit -%}
+        <div class="sfw-project">
+            {%- if post.thumbnail -%}
+            <div onclick="window.location='{{ post.url | relative_url }}'" class="sfw-project-thumbnail">
+                <img src="{{ post.thumbnail }}" class="sfw-project-img"/>
+            </div>
+            {%- endif -%}
+            <div onclick="window.location='{{ post.url | relative_url }}'" class="sfw-project-text">
+                <p class="sfw-project-text-title">{{ post.title }}</p>
+                {%- if post.subtitle -%}
+                <p class="sfw-project-text-subtitle">{{ post.subtitle }}</p>
+                {%- endif -%}
+            </div>
+        </div>
+    {%- endfor -%}
+    {%- if include.show_more and limit_exceeded -%}
+        <div class="sfw-project">
+            <div onclick="window.location='{{ include.show_more_url }}'" class="see-more-thumbnail">
+                <img src="/img/code.gif" alt="code gif"/>
+            </div>
+            <div onclick="window.location='{{ include.show_more_url }}'" class="sfw-project-text">
+                <p class="sfw-project-text-title">{{ include.show_more_text | default: "Show more..." }}</p>
+            </div>
+        </div>
+    </div>
+    {%- endif -%}
+<!--
   <ul>
     {%- for post in posts limit: include.limit -%}
         <li>
@@ -23,4 +51,85 @@
       <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a></li>
     {%- endif -%}
   </ul>
+-->
 {%- endif -%}
+
+<style>
+.sfw-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sfw-project-thumbnail:hover ~ .sfw-project-text {
+    background: dimgrey;
+}
+.sfw-project-thumbnail:hover ~ .sfw-project-text-subtitle {
+    color: white;
+}
+.sfw-project-text:hover {
+    background: dimgrey;
+    cursor: pointer;
+}
+.sfw-project-text:hover ~ .sfw-project-text-subtitle {
+    color: white;
+}
+.sfw-project-text-title:hover {
+    text-decoration: underline black dotted 2px;
+}
+.sfw-project-text-title:hover ~ .sfw-project-text-subtitle {
+    color: white;
+}
+.sfw-project-text-subtitle:hover {
+    color: white;
+}
+.sfw-project {
+    max-width: 256px; 
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+.sfw-project-thumbnail {
+    border-bottom: 1px solid black;
+    border-radius: 25px 25px 0px 0px;
+    max-width: 256px;
+    max-height: 128px;
+}
+.see-more-thumbnail {
+    border-bottom: 1px solid black;
+    max-width: 256px;
+    max-height: 128px;
+}
+.sfw-project-img {
+    max-width: 256px;
+    max-height: 128px;
+    border-radius: 25px 25px 0px 0px;
+}
+.sfw-project-text {
+    background: black;
+    border-radius: 0px 0px 20px 20px;
+}
+.sfw-project-text-title {
+    color: white;
+    font-family: 'Courier New', monospace; 
+    font-size: 20px;
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 2px;
+}
+.sfw-project-text-subtitle {
+    font-family: 'Georgia', serif; 
+    font-size: 13px;
+    font-style: italic;
+    color: gray;
+    margin-top: 0px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 7px;
+}
+</style>

@@ -2,6 +2,8 @@
 layout: post
 title:  "Checkbook"
 date:   2020-02-17 08:00:00 -0600
+subtitle: "Managing finances with Java Swing"
+thumbnail: "/img/mainframe.PNG"
 categories: java
 tags: java
 ---
