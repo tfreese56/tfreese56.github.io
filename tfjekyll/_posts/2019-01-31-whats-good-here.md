@@ -25,6 +25,9 @@ We even built a recommendation system. The system took what food the user had ra
 
 <img src="/img/whats-good-here.png" alt="app sc" style="width: 50%; height: 50%;"/>
 
+### BVU Article
+[School news article](https://www.bvu.edu/news/startup-seattle-lands-bvu-students-google-microsoft-amazon-and-more) about the trip.
+
 ## Thanks
 I'm still very thankful to have been part of this awesome experience. 
 

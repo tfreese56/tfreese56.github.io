@@ -42,7 +42,7 @@ And finally, in a class of their own, works by Douglas Hofstadter:
 </div>
 
 
-<img src="/img/space-needle.png" class="inline-icon"/>&nbsp;Seattle, Washington was on behalf of being selected to be part of a six student team of developers. In Seattle, we made an app with the help of two professors over the course of two and a half weeks. We lived and breathed Seattle visiting tourist sites and visiting tech companies. [School news article](https://www.bvu.edu/news/startup-seattle-lands-bvu-students-google-microsoft-amazon-and-more) about the trip.
+<img src="/img/space-needle.png" class="inline-icon"/>&nbsp;Seattle, Washington was on behalf of being selected to be part of a six student team of developers. In Seattle, [we made an app with the help of two professors](/wgh/2019/01/31/whats-good-here.html) over the course of two and a half weeks. We lived and breathed Seattle visiting tourist sites and visiting tech companies. [School news article](https://www.bvu.edu/news/startup-seattle-lands-bvu-students-google-microsoft-amazon-and-more) about the trip.
 <div class="about-images">
 <img class="myImg" src="/img/seattle1.jpg" alt="Seattle cityscape behind me" style="width:100%;max-width:300px;">
 <img class="myImg" src="/img/seattle2.jpg" alt="Seattle hiking trip" style="width:100%;max-width:300px;">
