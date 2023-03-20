@@ -22,22 +22,44 @@ entries:
       show_more_text: See more...
       show_more_url: archive.html
 
-  - title: public interests
+  - title: development mindset 
     entries:
-        - detail: Code bettering the world
-        - detail: Data privacy
-        - detail: It's all about the people
+        - detail: solution oriented
+          entries:
+            - detail: iterative progress
+        - detail: don't be too clever
+          entries:
+            - detail: code to quickly understand it again someday 
+        - detail: security & sandboxing
+          entries:
+            - detail: code with the abusive user in mind
 
-  - title: personal interests
+  - title: development skills
     entries:
-        - detail: Reading books from Principles by Ray Dalio to textbooks learning new comp sci or math topics
-        - detail: Finances
-        - detail: Being around water, taking awesome photos of nature
-        - detail: Finding rapture in ideas and moments that melt my mind of understanding
-  
+      - detail: languages 
+        entries:
+          - detail: <img src="/img/python.png" class="inline-icon"/> <img src="/img/java.png" class="inline-icon"/> <img src="/img/c.png" class="inline-icon"/> 
+          - detail: <img src="/img/javascript.png" class="inline-icon"/> <img src="/img/typescript-small.png" class="menu-logo"/> <img src="/img/html.png" class="inline-icon"/>
+          - detail: <img src="/img/django.png" class="inline-icon"/> <img src="/img/docker.png" class="inline-icon"/> <img src="/img/github.png" class="inline-icon"/>
+      - detail: databases
+        entries:
+          - detail: <img src="/img/mysql.png" class="inline-icon"/> <img src="/img/mongodb-small.png" class="menu-logo"/>
+      - detail: technologies
+        entries:
+          - detail: <img src="/img/splunk.png" class="menu-logo"/> 
+          - detail: <img src="/img/vue-small.png" class="menu-logo"/> <img src="/img/ionic-small.png" class="menu-logo"/>
+          - detail: <img src="/img/nodejs-small.png" class="menu-logo"/> <img src="/img/expressjs-small.png" class="menu-logo"/>
+          - detail: <img src="/img/nginx.png" class="menu-logo"/> 
+
+  - title: exploring
+    entries:
+      - detail: contributing to an open source project
+      - detail: Double Ratchet algorithm from Signal <img src="/img/signal-app.png" class="inline-icon"/>
+      - detail: the next place to go see the ocean <img src="/img/ocean.png" class="inline-icon"/>
+
   - title: connect
     entries:
-        - detail: Reach out if you think I could be a great asset
+        - detail: Reach out with an idea, question, or possible opportunity!
           entries:
             - detail: Email
             - detail: GitHub
