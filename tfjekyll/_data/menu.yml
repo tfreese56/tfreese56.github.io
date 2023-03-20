@@ -56,6 +56,7 @@ entries:
       - detail: contributing to an open source project
       - detail: Double Ratchet algorithm from Signal <img src="/img/signal-app.png" class="inline-icon"/>
       - detail: the next place to go see the ocean <img src="/img/ocean.png" class="inline-icon"/>
+      - detail: latest in Data Privacy
 
   - title: connect
     entries:
