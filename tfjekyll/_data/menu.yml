@@ -11,7 +11,7 @@ entries:
       - detail: studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" class="inline-icon"/>
         entries:
             - detail: Computer Science & Mathematics
-      - detail: enjoy the experience studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
+      - detail: enjoy studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
       - detail: <img src="/img/double-right.gif" class="inline-icon"/>  more...
         url: about
 
