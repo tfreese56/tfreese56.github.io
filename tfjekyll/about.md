@@ -1,11 +1,16 @@
 ---
 layout: aboutpage
 title: About
+description: "Hi! A bit more about me."
 permalink: /about/
 ---
-Hi! A bit more about me.
+I like programming, mathematics, and money; not necessarily in that order.
 
-## What you already know
+I always wonder "How?" and "Why?".
+
+I really enjoy exploring and implementing ideas; ideas that make life easier by solving problems. I believe technology is an assistant to get more out of life. 
+
+## From the home page 
 
 * problem solving programming & full stack development
 * from the midwest (<img src="/img/iowa.png" class="inline-icon"/>)
@@ -29,7 +34,9 @@ And finally, in a class of their own, works by Douglas Hofstadter:
 * *I Am a Strange Loop*
 
 ### I have traveled to Dominican Republic, Seattle, WA & New Zealand
-<img src="/img/dominican-republic.png" class="inline-icon"/>&nbsp;Dominican Republic was with a great friend in high school and his parents. Very thankful for this experience.
+
+### Dominican Republic 
+<img src="/img/dominican-republic.png" class="inline-icon"/>&nbsp;Dominican Republic was with a great friend in high school. Very thankful for this experience.
 <div class="about-images">
 <img class="myImg" src="/img/dr1.jpg" alt="Dominican Republic beach" style="width:100%;max-width:300px;">
 <img class="myImg" src="/img/dr2.jpg" alt="Dominican Republic driving go kart in the mud" style="width:100%;max-width:300px;">
@@ -42,13 +49,15 @@ And finally, in a class of their own, works by Douglas Hofstadter:
 </div>
 
 
+### Seattle, WA 
 <img src="/img/space-needle.png" class="inline-icon"/>&nbsp;Seattle, Washington was on behalf of being selected to be part of a six student team of developers. In Seattle, [we made an app with the help of two professors](/wgh/2019/01/31/whats-good-here.html) over the course of two and a half weeks. We lived and breathed Seattle visiting tourist sites and visiting tech companies. [School news article](https://www.bvu.edu/news/startup-seattle-lands-bvu-students-google-microsoft-amazon-and-more) about the trip.
 <div class="about-images">
 <img class="myImg" src="/img/seattle1.jpg" alt="Seattle cityscape behind me" style="width:100%;max-width:300px;">
 <img class="myImg" src="/img/seattle2.jpg" alt="Seattle hiking trip" style="width:100%;max-width:300px;">
 </div>
 
-<img src="/img/new-zealand.png" class="inline-icon"/>&nbsp;New Zealand is easily the trip of a life time. Again, spent two and a half weeks with fellow college classmates and two professors traveling from Auckland, NZ to Queensland, NZ. I can't put what this trip means to me into words. This opportunity was incredible and I cannot wait to go back some day.
+### New Zealand 
+<img src="/img/new-zealand.png" class="inline-icon"/>&nbsp;New Zealand is easily the trip of a life time. Spent two and a half weeks with fellow college classmates and two professors travelling from Auckland, NZ to Queenstown, NZ. This opportunity was incredible and I cannot wait to go back some day.
 <div class="about-images">
 <img class="myImg" src="/img/nz1.jpg" alt="New Zealand road trip" style="width:100%;max-width:300px;">
 <img class="myImg" src="/img/nz2.jpg" alt="Auckland, New Zealand behind me" style="width:100%;max-width:300px;">
@@ -60,11 +69,13 @@ And finally, in a class of their own, works by Douglas Hofstadter:
 I use [GnuCash](https://www.gnucash.org/) to manage my personal finances; really awesome in-depth program.
 
 
+<!---
 ### I rode dirtbikes
 Riding dirtbikes was a huge past time of mine when I was younger.
 <div style="display: flex; flex-direction: row;">
 <img class="myImg" src="/img/dirtbike1.jpg" alt="Jumping my dirtbike" style="width:100%;max-width:300px;">
 </div>
+-->
 
 
 ### Sat-Chit-Ananda
