@@ -5,9 +5,11 @@ date:   2021-03-19 08:00:00 -0600
 subtitle: "SQL injection bank hack"
 thumbnail: "/img/incredi-safe-bank.png"
 categories: python 
+tags: Python
+technologies: python sqldb
 ---
 <link rel="stylesheet" href="/css/styles.css">
-For Computer Security at BVU, we had the opportunity to write a hackable service. I built a proof-of-concept SQL injection site modeled after a bank website. The site uses flask as a Python <img src="/img/python.png" class="inline-icon"/> backend and sqlite3 as the database being hacked.
+In Computer Security at BVU, we had the opportunity to write a hackable service. I built a proof-of-concept SQL injection site modeled after a bank website. The site uses flask as a Python <img src="/img/python.png" class="inline-icon"/> backend and sqlite3 as the database being hacked.
 
 
 ### The Hack
