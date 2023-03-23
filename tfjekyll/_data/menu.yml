@@ -5,75 +5,56 @@ entries:
   - title: about 
     entries:
       - detail: problem solving programming & full stack development
+      - detail: enjoy studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
       - detail: from the midwest (<img src="/img/iowa.png" class="inline-icon"/>)
 #      - detail: github repo
 #        url: https://github.com/tfreese56
       - detail: studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" class="inline-icon"/>
-        entries:
-            - detail: Computer Science & Mathematics
-      - detail: enjoy studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
       - detail: <img src="/img/double-right.gif" class="inline-icon"/>  more...
         url: about
 
-  - title: software projects
+  - title: tech interests 
+    entries:
+      - detail: developing full stack, cross-platform apps
+      - detail: information security & cryptography
+      - detail: tech that solves worldly problems
+
+  - title: top software projects
     post_list:
-      limit: 5
+      tag: Showcase 
       show_more: true
       show_more_text: See more...
       show_more_url: archive.html
 
   - title: development mindset 
     entries:
-        - detail: solution oriented
-          entries:
-            - detail: iterative progress
-        - detail: don't be too clever
-          entries:
-            - detail: code to quickly understand it again someday 
-        - detail: security & sandboxing
-          entries:
-            - detail: code with the abusive user in mind
+        - detail: solution oriented -> iterative progress
+        - detail: don't be too clever -> write code that's quickly understood again someday
+        - detail: security & sandboxing -> keep the hacker in mind
 
   - title: development skills
     entries:
-      - detail: languages 
+      - detail: language experience
         entries:
-          - detail: <img src="/img/python.png" class="inline-icon"/> <img src="/img/java.png" class="inline-icon"/> <img src="/img/c.png" class="inline-icon"/> 
-          - detail: <img src="/img/javascript.png" class="inline-icon"/> <img src="/img/typescript-small.png" class="menu-logo"/> <img src="/img/html.png" class="inline-icon"/>
+          - detail: <img src="/img/python.png" class="inline-icon"/> <img src="/img/java.png" class="inline-icon"/> <img src="/img/c.png" class="inline-icon"/> <img src="/img/cpp.png" class="inline-icon"/>
+          - detail: <img src="/img/javascript.png" class="inline-icon"/> <img src="/img/typescript.png" class="inline-icon"/> <img src="/img/html.png" class="inline-icon"/>
           - detail: <img src="/img/django.png" class="inline-icon"/> <img src="/img/docker.png" class="inline-icon"/> <img src="/img/github.png" class="inline-icon"/>
       - detail: databases
         entries:
-          - detail: <img src="/img/mysql.png" class="inline-icon"/> <img src="/img/mongodb-small.png" class="menu-logo"/>
+          - detail: <img src="/img/mysql-small.png" class="menu-logo"/> <img src="/img/sqlite-small.png" class="menu-logo"/> <img src="/img/mongodb-small.png" class="menu-logo"/>
       - detail: technologies
         entries:
-          - detail: <img src="/img/splunk.png" class="menu-logo"/> 
           - detail: <img src="/img/vue-small.png" class="menu-logo"/> <img src="/img/ionic-small.png" class="menu-logo"/>
           - detail: <img src="/img/nodejs-small.png" class="menu-logo"/> <img src="/img/expressjs-small.png" class="menu-logo"/>
           - detail: <img src="/img/nginx.png" class="menu-logo"/> 
-
-  - title: exploring
-    entries:
-      - detail: contributing to an open source project
-      - detail: Double Ratchet algorithm from Signal <img src="/img/signal-app.png" class="inline-icon"/>
-      - detail: the next place to go see the ocean <img src="/img/ocean.png" class="inline-icon"/>
-      - detail: latest in Data Privacy
+      - detail: programs 
+        entries:
+          - detail: <img src="/img/splunk.png" class="menu-logo"/> 
 
   - title: connect
     entries:
-        - detail: Reach out with an idea, question, or possible opportunity!
+        - detail: Reach out with an idea, question, or opportunity!
           entries:
-            - detail: Email
-            - detail: GitHub
+            - detail: <img src="/img/github.png" class="inline-icon"/> Available on GitHub 
               url: https://github.com/tfreese56
         - italics_detail: thanks!
-  - title: links
-    entries:
-      - small_detail: <a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      - small_detail: <a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      - small_detail: <a target="_blank" href="https://icons8.com/icon/54383/critical-thinking">Critical Thinking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      - small_detail: <a target="_blank" href="https://icons8.com/icon/rSpyVW0zHkSF/double-right">Double Right</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      - small_detail: <a target="_blank" href="https://icons8.com/icon/IU9BMZfRqyeY/encrypted">Encrypted</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      - small_detail: <a target="_blank" href="https://tristanpenman.com/blog/images/implementing-a-dht-with-scala-and-akka/chord-route@2x.png">Chord route</a>
-      - small_detail: <a target="_blank" href="https://icons8.com/icon/12212/hdd">HDD</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      - small_detail: <a target="_blank" href="https://giphy.com/gifs/technology-data-transfer-optical-fiber-l41YvpiA9uMWw5AMU">Data wires</a>
-      - small_detail: <a target="_blank" href="https://icons8.com/icon/mcCRHk2xvR7f/code">Code</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
