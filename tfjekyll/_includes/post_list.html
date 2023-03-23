@@ -1,5 +1,7 @@
 {%-if include.category-%}
   {%-assign posts = site.categories[include.category]-%}  
+{%-elsif include.tag-%}
+  {%-assign posts = site.tags[include.tag]-%}  
 {%-else-%}
   {%-assign posts = site.posts-%}
 {%-endif-%}
@@ -13,6 +15,7 @@
 {%- if posts.size > 0 -%}
     <div class="sfw-projects">
     {%- for post in posts limit: include.limit -%}
+      {%- unless post.tags contains include.notTag -%}
         <div class="sfw-project">
             {%- if post.thumbnail -%}
             <div onclick="window.location='{{ post.url | relative_url }}'" class="sfw-project-thumbnail">
@@ -26,8 +29,9 @@
                 {%- endif -%}
             </div>
         </div>
+      {%- endunless -%}
     {%- endfor -%}
-    {%- if include.show_more and limit_exceeded -%}
+    {%- if include.show_more -%}
         <div class="sfw-project">
             <div onclick="window.location='{{ include.show_more_url }}'" class="see-more-thumbnail">
                 <img src="/img/code.gif" alt="code gif"/>
@@ -36,22 +40,8 @@
                 <p class="sfw-project-text-title">{{ include.show_more_text | default: "Show more..." }}</p>
             </div>
         </div>
+    {%- endif -%}
     </div>
-    {%- endif -%}
-<!--
-  <ul>
-    {%- for post in posts limit: include.limit -%}
-        <li>
-          <span style="font-family: 'Courier New', monospace; font-size: 20px;">[ {{ post.title }} ]</span>
-          <span>{{- post.date | date: site.theme_config.date_format -}}</span>
-          <a href="{{ post.url | relative_url }}">.view-project()</a>
-        </li>
-    {%- endfor -%}
-    {%- if include.show_more and limit_exceeded -%}
-      <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a></li>
-    {%- endif -%}
-  </ul>
--->
 {%- endif -%}
 
 <style>
@@ -86,7 +76,7 @@
 }
 .sfw-project {
     max-width: 256px; 
-    border: 2px solid black;
+    border: 4px solid black;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -95,7 +85,7 @@
 }
 .sfw-project-thumbnail {
     border-bottom: 1px solid black;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     max-width: 256px;
     max-height: 128px;
 }
@@ -107,7 +97,7 @@
 .sfw-project-img {
     max-width: 256px;
     max-height: 128px;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 .sfw-project-text {
     background: black;
