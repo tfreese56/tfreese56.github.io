@@ -21,7 +21,7 @@
 title: Tyler F.
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-    not sure which I love most: programming, math, or being frugal 
+    not sure what I love the most: programming, math, or being frugal 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
