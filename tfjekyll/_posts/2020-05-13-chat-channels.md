@@ -4,13 +4,15 @@ title:  "Chat Channels"
 date:   2020-05-13 08:00:00 -0600
 subtitle: "Chat platform using decentralized storage"
 thumbnail: "/img/cc-many.png"
-categories: python 
+categories: python
+tags: Python
+technologies: python
 ---
 <link rel="stylesheet" href="/css/styles.css">
 Chat Channels is a communications platform built on top of a [Distributed Hash Table](/python/2021/04/20/distributed-hash-table.html) written in Python <img src="/img/python.png" class="inline-icon"/>.
 
 Goals of this platform:
-* Easy, ephemeral chat rooms for work/projects/friends/people at an event
+* Easy, ephemeral chat rooms for work/projects/friends/people
 * Longer lasting chat boards for family members
 * Minimal interface and user profiles
 * Data stored on a decentralized structure
