@@ -3,10 +3,11 @@ layout: post
 title:  "X Device Locker"
 date:   2021-04-18 08:00:00 -0600
 subtitle: "Cross platform password storage"
-thumbnail: "/img/ionic-small.png"
+thumbnail: "/img/vue-small.png"
 categories: ionic 
+tags: Vue
 ---
-X Device Locker is an app storing ( Key, Value ) pairs where the Value is encrypted using the user's main password. The original intention was for a user to have a completely local, secure password storage for their online services.
+X Device Locker is an app storing ( Key, Value ) pairs where the Value is encrypted using the user's password. The original intention was for a user to have a completely local, secure password storage for their online services.
 
 Technologies: 
 <div style="display: flex; align-items: center; flex-direction: row; flex-wrap: wrap;">
@@ -23,7 +24,7 @@ First, a user sets a main password that is used to protect all the passwords to 
 <img src="/img/tcloud-register.png" alt="x device locker register" class="screenshot"/>
 
 ## Login
-What the user sees each time they reopen the app. User has the ability to change their main password and on doing so, each of their passowrds is re-encrypted with the new main password.
+The login page the user sees each time they reopen the app. The user has the ability to change their main password and on doing so, each of their passowrds is re-encrypted with the new main password.
 
 <img src="/img/tcloud-login.png" alt="x device locker login" class="screenshot"/>
 
