@@ -16,8 +16,8 @@ entries:
   - title: tech interests 
     entries:
       - detail: developing full stack, cross-platform apps
+      - detail: writing efficient, organized code
       - detail: information security & cryptography
-      - detail: tech that solves worldly problems
 
   - title: top software projects
     post_list:
