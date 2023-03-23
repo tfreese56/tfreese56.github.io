@@ -5,7 +5,8 @@ date:   2020-02-17 08:00:00 -0600
 subtitle: "Managing finances with Java Swing"
 thumbnail: "/img/mainframe.PNG"
 categories: java
-tags: java
+tags: Java
+technologies: java
 ---
 At the start of my coding experience (high school, 2016), I started a "business game" that I soon used to track my income and expenses. I used this program for ~3 years in college to manage my finances. Written in Java <img src="/img/java.png" style="width: 32px; height: 32px; display: inline-block;"/> and Java Swing for the UI.
 
