@@ -5,17 +5,19 @@ subtitle: "Decentralized storage system"
 thumbnail: "/img/chord-route.png"
 date:   2021-04-20 08:00:00 -0600
 categories: python 
+tags: Python
+technologies: python
 ---
 <link rel="stylesheet" href="/css/styles.css">
 In Networks & Distributed Systems class, we were assigned to write a Distributed Hash Table (DHT) in Python <img src="/img/python.png" class="inline-icon"/>. The DHT protocol was provided by [Dr. Nathan Backman](https://www.bvu.edu/academics/faculty/nathan-backman) of [Buena Vista University](https://www.bvu.edu/).
 
+Originally written with [@jackmford](https://github.com/jackmford) <img src="/img/github.png" class="inline-icon"/>
+
 # DHT
 <img src="/img/chord-route.png" alt="DHT chord route" style="width: 35%; height: 35%; margin-bottom: 20px;"/>
-This is *easily* in my top three favorite projects/assignments at BVU. On the home page, I mention mind-bending ideas. Experiencing and implementing this concept (the DHT) is precisely the moment I'm referring to. Props to Professor Backman for this.
+This is *easily* in my top three favorite projects/assignments at BVU.
 
-Post college, I spent time refining the code and creating a Python <img src="/img/python.png" class="inline-icon"/> interface to the main DHT code. The interface is basically an API to any DHT provided by an "IP:PORT" combo.\*
-
-\* Given it uses Professor Backman's protocol.
+Post college, I spent time refining the code and creating a Python <img src="/img/python.png" class="inline-icon"/> interface to the main DHT code.
 
 ### Best part
 Implementing the ownership algorithm (how the nodes determine who owns a specific hash) was the most challenging but rewarding piece.
