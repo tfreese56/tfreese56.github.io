@@ -12,7 +12,9 @@ technologies: typescript
 
 In 2019, I was selected to be part of a six student app development team. [Dr. Nathan Backman](https://www.bvu.edu/academics/faculty/nathan-backman) of [Buena Vista University](https://www.bvu.edu/) <img src="/img/beaver.png" alt="beaver logo" class="inline-icon"/> led the team and expedition. 
 
-<img src="/img/space-needle.png" alt="space needle seattle" class="inline-icon"/> We traveled to Seattle, WA where we lived a startup life. The team worked each day to develop and use our app, recording real data as we traversed the city. The app What's Good Here? is a crowd sourced restaurant and food rating app. We ate out nearly every day and each wrote reviews on What's Good Here?. Our reviews included 5 star rating scales, images, and a comment section.
+<img src="/img/space-needle.png" alt="space needle seattle" class="inline-icon"/> We traveled to Seattle, WA where we lived a startup life. We worked each day to develop and use our app in the city recording real data. 
+
+What's Good Here? is a crowd sourced restaurant and food rating app. We ate out nearly every day and wrote reviews on What's Good Here?. Our reviews included 5 star rating scales, images, and a comment section.
 
 In the couple weeks we lived there, we developed an app, traveled the city, hiked, and visited companies like Amazon, Google, Adobe, and Microsoft.
 

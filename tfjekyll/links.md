@@ -11,9 +11,6 @@ permalink: /links/
 <a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 </div>
 <div>
-<a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-</div>
-<div>
 <a target="_blank" href="https://icons8.com/icon/rSpyVW0zHkSF/double-right">Double Right</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 </div>
 <div>

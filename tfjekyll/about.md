@@ -18,8 +18,6 @@ I always wonder "How?" and "Why?".
 
 <img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>the next place I want to go see the ocean <img src="/img/ocean.png" class="inline-icon"/>
 
-<img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>the latest in Data Privacy
-
 
 ### I spend free time reading books
 
@@ -54,14 +52,14 @@ Read more about it in the [school news article.](https://www.bvu.edu/news/startu
 </div>
 
 ### New Zealand 
-<img src="/img/new-zealand.png" class="inline-icon"/>&nbsp;This is easily the trip of a life time. I spent two and a half weeks with fellow college classmates and two professors travelling from Auckland, NZ to Queenstown, NZ. This opportunity was incredible and I cannot wait to go back some day.
+<img src="/img/new-zealand.png" class="inline-icon"/>&nbsp;This is easily the trip of a life time. I spent two and a half weeks with fellow college classmates and two professors traveling from Auckland, NZ to Queenstown, NZ. This opportunity was incredible and I cannot wait to go back some day.
 <div class="about-images">
 <img class="myImg" src="/img/nz1.jpg" alt="New Zealand road trip" style="width:100%;max-width:300px;">
 <img class="myImg" src="/img/nz2.jpg" alt="Auckland, New Zealand behind me" style="width:100%;max-width:300px;">
 </div>
 
 ### I enjoy finances
-<img src="/img/cash.gif" class="inline-icon"/>&nbsp;I've always been interested in personal finance and money. To me, money is a tool to go cool places like ^^ and expand oneself. I believe money makes you more of what you already are. 
+<img src="/img/cash.gif" class="inline-icon"/>&nbsp;I've always been interested in personal finance and money. To me, money is a tool to go cool places like ^^.
 
 I use [GnuCash](https://www.gnucash.org/) to manage my personal finances; a really awesome, in-depth program.
 
@@ -78,17 +76,15 @@ Riding dirtbikes was a huge past time of mine when I was younger.
 ### Thanks!
 Thanks for at least scrolling this far!
 
-I'm super grateful for all I've poured into my life so far. 
-
 My goal is to keep moving towards greater goals and experiences beyond what I knew I could do.
 
 ##### Links
 <div style="font-size: 10px;">
-<a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/fMenVV76fHtn/%3E">></a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>
-<a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/D0PCZVHfUBQL/ocean">Ocean</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>
-<a target="_blank" href="https://icons8.com/icon/54383/critical-thinking">Critical Thinking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/gQ4NaXzMSLil/signal-app">Signal App</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>
 <a target="_blank" href="https://icons8.com/icon/37270/dominican-republic">Dominican Republic</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>

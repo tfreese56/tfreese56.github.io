@@ -13,7 +13,7 @@ Inspired by my work in Information Security with <img src="/img/splunk.png" id="
 
 My Stream Processor can handle a continuous stream of events, parse, then alert on a desired event in the stream.
 
-Extensible code was one of my main focuses developing this project. At finish, the goal was to have the code product ready to be extended by future developers. The main extensible part of the finished project is the workflow processing code. With this, one can create a workflow of operators that fit their unique stream of data.
+Extensible code was one of my main focuses developing this project. The main extensible part of the finished project is the workflow processing code. With this, one can create a workflow of operators that fit their unique stream of data.
 
 Programming language: Java <img src="/img/java.png" class="inline-icon" style="width: 64px; height: 64px;"/>
 
@@ -36,10 +36,10 @@ My Stream Processor has the following capabilities\*:
 <img src="/img/sp-summary.png" alt="sp summary"/>
 
 ### Ingest Data from Anywhere
-Data can be retrieved in theoretically any way. The only requirement is it needs to be ingested into the Stream Processor from the [Stream Emitter](/java/2021/03/04/stream-emitter.html). Structured or unstructured, what matters is getting the data to the Stream Processor. From there, it is up to the processing engine to process it.
+Data can be retrieved from anywhere data is generated. The only requirement is it needs to be ingested into the Stream Processor from the [Stream Emitter](/java/2021/03/04/stream-emitter.html). Structured or unstructured, what matters is getting the data to the Stream Processor. From there, it is up to the processing engine to process it.
 
 ### Arbitrary Processing Code
-Implementing this Stream Processor is on the developer to implement their workflow. Workflows and processing is specific to each stream of data. Thus, the reason I wanted to write an extensible product.
+A developer can write their own workflow using this Stream Processor.
 
 What does arbitrary processing code mean, *exactly*?
 
