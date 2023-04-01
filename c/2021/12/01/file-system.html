@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>File System</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="File System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is an implementation of a file system by the parameters specified by Dr. Nathan Backman of Buena Vista University." />
+<meta property="og:description" content="This is an implementation of a file system by the parameters specified by Dr. Nathan Backman of Buena Vista University." />
+<link rel="canonical" href="https://tfreese56.github.io/c/2021/12/01/file-system.html" />
+<meta property="og:url" content="https://tfreese56.github.io/c/2021/12/01/file-system.html" />
+<meta property="og:site_name" content="Tyler F." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-01T08:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="File System" />
+<script type="application/ld+json">
+{"headline":"File System","dateModified":"2021-12-01T08:00:00-06:00","datePublished":"2021-12-01T08:00:00-06:00","description":"This is an implementation of a file system by the parameters specified by Dr. Nathan Backman of Buena Vista University.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tfreese56.github.io/c/2021/12/01/file-system.html"},"url":"https://tfreese56.github.io/c/2021/12/01/file-system.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://tfreese56.github.io/feed.xml" title="Tyler F." /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">Home</a><article>
+  <p class="post-meta">
+    <time datetime="2021-12-01 08:00:00 -0600">December 2021</time>
+  </p>
+  
+  <h1>File System</h1>
+
+  <link rel="stylesheet" href="/css/styles.css" />
+
+<p>This is an implementation of a file system by the parameters specified by <a href="https://www.bvu.edu/academics/faculty/nathan-backman">Dr. Nathan Backman</a> of <a href="https://www.bvu.edu/">Buena Vista University</a>.</p>
+
+<p>Originally written with <a href="https://github.com/jackmford">@jackmford</a> <img src="/img/github.png" class="inline-icon" /></p>
+
+<p>I spent Summer 2020 rewriting and improving the code to gain a deeper understanding of file systems.</p>
+
+<p>Programming language: <img src="/img/c.png" alt="c programming" class="inline-icon" /></p>
+
+<h2 id="design">Design</h2>
+<p>Requirements of this project were to implement the following funcionalities of a file system:</p>
+<ul>
+  <li><span class="design-requirement">init</span> - setup file system for reading, writing, and storing data</li>
+  <li><span class="design-requirement">destroy</span> - save important file system pointers and info to disk on exit</li>
+  <li><span class="design-requirement">open/close</span> - enforce rules of opening and closing files; hand off pointers to file data blocks</li>
+  <li><span class="design-requirement">read</span> - algorithm for reading file data; parameters including bytes to read, output location</li>
+  <li><span class="design-requirement">write</span> - algorithm for writing file data using available file system blocks</li>
+  <li><span class="design-requirement">unlink</span> - remove a file from the file system and free its data blocks</li>
+  <li><span class="design-requirement">list files</span> - list file names of currently stored files</li>
+</ul>
+
+<h2 id="test-suite">Test Suite</h2>
+<p>As I rewrote the code, I wrote out a test suite extending the one we were provided. The test suite included tests such as:</p>
+<ul>
+  <li>attempt to write one byte more than allocated to the file</li>
+  <li>try opening a file more than once (not allowed in this file system)</li>
+  <li>buffer over read of file bytes (reading more bytes than allocated to the file)</li>
+  <li>try writing to a file without opening it first</li>
+  <li>fill the file system then delete everything
+    <ul>
+      <li>ensure all the file system blocks get returned successfully</li>
+    </ul>
+  </li>
+  <li>many more…</li>
+</ul>
+
+<h2 id="greatest-challenge">Greatest Challenge</h2>
+<p>The algorithms to handle free file system blocks (providing them to files and restoring them to a free state) was a significant challenge.</p>
+
+<p>I’d also say closing (destroying) the active <em>real</em> file and reopening it was challenging. This required a successful exit process storing data so the next time it was opened, the file system can resume right where it left off.</p>
+
+<p>After much testing, I was curious what more I could do with this established, working file system I had.</p>
+
+<p>So, I turned it into an <a href="/c/2021/12/11/tfs-cwad.html">Encrypted File System</a>. <img src="/img/encrypt.png" alt="encrypted icon" class="inline-icon" /></p>
+
+<h2 id="thanks">Thanks</h2>
+<p>Thank you for checking out my File System project. Read about the <a href="/c/2021/12/11/tfs-cwad.html">Encrypted File System</a>!</p>
+
+<p>Best.</p>
+
+<h5 id="links">Links</h5>
+<div style="font-size: 10px;">
+<a target="_blank" href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://icons8.com/icon/40670/c-programming">C Programming</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>
+
+<style>
+.design-requirement {
+    font-family: 'Courier New', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}
+</style>
+
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

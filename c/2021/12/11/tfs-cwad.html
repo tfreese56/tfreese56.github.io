@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Encrypted File System</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Encrypted File System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This project is an extension of my other project File System. Encrypted File System encrypts meta data and file data before storage and erases by overwriting with zero bytes." />
+<meta property="og:description" content="This project is an extension of my other project File System. Encrypted File System encrypts meta data and file data before storage and erases by overwriting with zero bytes." />
+<link rel="canonical" href="https://tfreese56.github.io/c/2021/12/11/tfs-cwad.html" />
+<meta property="og:url" content="https://tfreese56.github.io/c/2021/12/11/tfs-cwad.html" />
+<meta property="og:site_name" content="Tyler F." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-11T08:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Encrypted File System" />
+<script type="application/ld+json">
+{"headline":"Encrypted File System","dateModified":"2021-12-11T08:00:00-06:00","datePublished":"2021-12-11T08:00:00-06:00","description":"This project is an extension of my other project File System. Encrypted File System encrypts meta data and file data before storage and erases by overwriting with zero bytes.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tfreese56.github.io/c/2021/12/11/tfs-cwad.html"},"url":"https://tfreese56.github.io/c/2021/12/11/tfs-cwad.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://tfreese56.github.io/feed.xml" title="Tyler F." /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">Home</a><article>
+  <p class="post-meta">
+    <time datetime="2021-12-11 08:00:00 -0600">December 2021</time>
+  </p>
+  
+  <h1>Encrypted File System</h1>
+
+  <link rel="stylesheet" href="/css/styles.css" />
+
+<p>This project is an extension of my other project <a href="/c/2021/12/01/file-system.html">File System</a>. Encrypted File System encrypts meta data and file data before storage and erases by overwriting with zero bytes.</p>
+
+<p>Programming language: <img src="/img/c.png" alt="c programming" class="inline-icon" /></p>
+
+<p>Library for cryptography: <img src="/img/openssl-small.png" alt="openssl logo" style="display: inline-block; vertical-align: middle;" /></p>
+
+<h2 id="extending-the-file-system">Extending the File System</h2>
+<p>The Encrypted File System uses 32 byte keys generated with OpenSSL’s random bytes. The algorithm used to encrypt the meta and file data is AES-256-GCM.</p>
+
+<h2 id="goals">Goals</h2>
+<p>My goals for adding cryptography to the File System were to:</p>
+<ul>
+  <li>provide “disk level” encryption handled by the File System</li>
+  <li>erase user data with 0’s on unlink</li>
+  <li>each file gets its own 32 byte key for encryption which is destroyed on unlink</li>
+  <li>user can interact with the file system just like the original</li>
+</ul>
+
+<p>My motivation to compelete this project (~ December 2021) was merely proof-of-concept for myself.</p>
+
+<p>I enjoy stretching my skills and capabilities into the unknown to learn more.</p>
+
+<h2 id="testing">Testing</h2>
+<p>I used the same suite of tests written for the original File System and added extra crypto tests. Given I wanted the user interface to be no different than the regular file system, all tests should pass just like they did in the original File System.</p>
+
+<h2 id="success">Success</h2>
+<p>What could the final product do differently than the original File System?</p>
+
+<ol>
+  <li>
+    <p>Each new file receives its own key, is encrypted as a whole, then written block by block. The file system now accounts for key storage in front of the file data. When a user wants to read a file, the file system decrypts the ciphertext and provides the plaintext.</p>
+  </li>
+  <li>
+    <p>At the front of the system, the meta data is now encrypted with a 32 byte key. On open/initialize, the meta data is decrypted and stored in memory. On close, it is re-encrypted and written to disk.</p>
+  </li>
+</ol>
+
+<h2 id="thanks">Thanks</h2>
+<p>Thanks for your time reviewing my Encrypted File System project.</p>
+
+<p>Best.</p>
+
+<h5 id="links">Links</h5>
+<div style="font-size: 10px;">
+<a target="_blank" href="https://icons8.com/icon/40670/c-programming">C Programming</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://fossa.com/blog/content/images/2022/10/openssl.png">OpenSSL logo</a>
+</div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,3 +1,0 @@
-# tfreese56.github.io
-
-Currently building...

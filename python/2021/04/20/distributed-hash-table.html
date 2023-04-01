@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Distributed Hash Table</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Distributed Hash Table" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In Networks &amp; Distributed Systems class, we were assigned to write a Distributed Hash Table (DHT) in Python . The DHT protocol was provided by Dr. Nathan Backman of Buena Vista University." />
+<meta property="og:description" content="In Networks &amp; Distributed Systems class, we were assigned to write a Distributed Hash Table (DHT) in Python . The DHT protocol was provided by Dr. Nathan Backman of Buena Vista University." />
+<link rel="canonical" href="https://tfreese56.github.io/python/2021/04/20/distributed-hash-table.html" />
+<meta property="og:url" content="https://tfreese56.github.io/python/2021/04/20/distributed-hash-table.html" />
+<meta property="og:site_name" content="Tyler F." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-20T09:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Distributed Hash Table" />
+<script type="application/ld+json">
+{"headline":"Distributed Hash Table","dateModified":"2021-04-20T09:00:00-05:00","datePublished":"2021-04-20T09:00:00-05:00","description":"In Networks &amp; Distributed Systems class, we were assigned to write a Distributed Hash Table (DHT) in Python . The DHT protocol was provided by Dr. Nathan Backman of Buena Vista University.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tfreese56.github.io/python/2021/04/20/distributed-hash-table.html"},"url":"https://tfreese56.github.io/python/2021/04/20/distributed-hash-table.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://tfreese56.github.io/feed.xml" title="Tyler F." /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">Home</a><article>
+  <p class="post-meta">
+    <time datetime="2021-04-20 09:00:00 -0500">April 2021</time>
+  </p>
+  
+  <h1>Distributed Hash Table</h1>
+
+  <link rel="stylesheet" href="/css/styles.css" />
+
+<p>In Networks &amp; Distributed Systems class, we were assigned to write a Distributed Hash Table (DHT) in Python <img src="/img/python.png" class="inline-icon" />. The DHT protocol was provided by <a href="https://www.bvu.edu/academics/faculty/nathan-backman">Dr. Nathan Backman</a> of <a href="https://www.bvu.edu/">Buena Vista University</a>.</p>
+
+<p>Originally written with <a href="https://github.com/jackmford">@jackmford</a> <img src="/img/github.png" class="inline-icon" /></p>
+
+<h1 id="dht">DHT</h1>
+<p><img src="/img/chord-route.png" alt="DHT chord route" style="width: 35%; height: 35%; margin-bottom: 20px;" />
+This is <em>easily</em> in my top three favorite projects/assignments at BVU.</p>
+
+<p>Post college, I spent time refining the code and creating a Python <img src="/img/python.png" class="inline-icon" /> interface to the main DHT code.</p>
+
+<h3 id="best-part">Best part</h3>
+<p>Implementing the ownership algorithm (how the nodes determine who owns a specific hash) was the most challenging but rewarding piece.</p>
+
+<h2 id="so-what-is-it">So, what is it??</h2>
+<h3 id="tldr">TL;DR</h3>
+<p>Decentralized storage using ( Key, Value ) pairs.</p>
+
+<h3 id="usage">Usage</h3>
+<p>The entire ring is reachable from any entry point (a node [computer participating in the DHT]). Then the user can store ( Key, Value ) pairs within the system that can be retrieved again later.</p>
+
+<p>As mentioned on the <a href="/python/2020/05/13/chat-channels.html">Chat Channels</a> page, benefits of a DHT are:</p>
+<ul>
+  <li>Data persists as long as the DHT does
+    <ul>
+      <li>being decentralized, data shifts owners as nodes enter and exit the DHT</li>
+    </ul>
+  </li>
+  <li>Decentralization means no single computer is in charge of the system
+    <ul>
+      <li>nodes communicate and adjust ownership accordingly</li>
+    </ul>
+  </li>
+  <li>K-Safety (not implemented here)
+    <ul>
+      <li>storing backups of data with predecessors in case sudden removal of a node</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="explanation">Explanation</h3>
+<p>I think <a href="https://hazelcast.com/glossary/distributed-hash-table/">Hazelcast’s</a> definition explains it best:</p>
+
+<p><img src="/img/hazelcast-expl.png" alt="Hazelcast dht explanation" /></p>
+
+<h3 id="visualization">Visualization</h3>
+<p><img src="/img/DHT_VIS.png" alt="dht visualization" /></p>
+
+<h2 id="data-types">Data Types</h2>
+<p>Data types our DHT adhered to.</p>
+<ul>
+  <li>Key/hash: SHA-1, 160-bit, 20-byte UTF-8
+    <ul>
+      <li>Key used to lookup values in the DHT</li>
+    </ul>
+  </li>
+  <li>valSize: 8-byte, big endian
+    <ul>
+      <li>valSize is the size of the data being stored</li>
+    </ul>
+  </li>
+  <li>peerAddress: [4-byte ip][2-byte port big endian]</li>
+  <li>peerHash/key: SHA-1 hash of “IP:Port”
+    <ul>
+      <li>Example: SHA1( “192.168.0.1:5000” )</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="operations">Operations</h2>
+<p>A few of our DHT operations:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Insert - Add/update/replace an item to/in the DHT
+Remove - Removes an item from the DHT
+Get - Retrieves an item from the DHT
+Exists - Check to see if an item exists within the DHT
+Owns - Asks a peer who they know to be the nearest owner to a key
+...
+</code></pre></div></div>
+
+<h3 id="thanks">Thanks</h3>
+<p>Thanks for reading about my experience with the Distributed Hash Table.</p>
+
+<p>Best.</p>
+
+<h5 id="links">Links</h5>
+<div style="font-size: 10px;">
+<a target="_blank" href="https://icons8.com/icon/13441/python">Python</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+DHT chord <a target="_blank" href="https://tristanpenman.com/blog/images/implementing-a-dht-with-scala-and-akka/chord-route@2x.png">visualization</a>
+<br />
+DHT node <a target="_blank" href="https://sujithjay.com/public/DHT-Dynamo.png">visualization</a>
+</div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

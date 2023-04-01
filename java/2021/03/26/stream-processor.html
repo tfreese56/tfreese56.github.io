@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Processing a Stream of Endless Data</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Processing a Stream of Endless Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Inspired by my work in Information Security with , I built a Stream Processor for my capstone project." />
+<meta property="og:description" content="Inspired by my work in Information Security with , I built a Stream Processor for my capstone project." />
+<link rel="canonical" href="https://tfreese56.github.io/java/2021/03/26/stream-processor.html" />
+<meta property="og:url" content="https://tfreese56.github.io/java/2021/03/26/stream-processor.html" />
+<meta property="og:site_name" content="Tyler F." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-26T09:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Processing a Stream of Endless Data" />
+<script type="application/ld+json">
+{"headline":"Processing a Stream of Endless Data","dateModified":"2021-03-26T09:00:00-05:00","datePublished":"2021-03-26T09:00:00-05:00","description":"Inspired by my work in Information Security with , I built a Stream Processor for my capstone project.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tfreese56.github.io/java/2021/03/26/stream-processor.html"},"url":"https://tfreese56.github.io/java/2021/03/26/stream-processor.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://tfreese56.github.io/feed.xml" title="Tyler F." /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">Home</a><article>
+  <p class="post-meta">
+    <time datetime="2021-03-26 09:00:00 -0500">March 2021</time>
+  </p>
+  
+  <h1>Processing a Stream of Endless Data</h1>
+
+  <link rel="stylesheet" href="/css/styles.css" />
+
+<p>Inspired by my work in Information Security with <img src="/img/splunk.png" id="splunk-icon" />, I built a Stream Processor for my capstone project.</p>
+
+<p>My Stream Processor can handle a continuous stream of events, parse, then alert on a desired event in the stream.</p>
+
+<p>Extensible code was one of my main focuses developing this project. The main extensible part of the finished project is the workflow processing code. With this, one can create a workflow of operators that fit their unique stream of data.</p>
+
+<p>Programming language: Java <img src="/img/java.png" class="inline-icon" style="width: 64px; height: 64px;" /></p>
+
+<h2 id="stream-processors">Stream Processors</h2>
+<p>What are Stream Processors? They are meant for data that essentially could never end.</p>
+
+<p>Think of the following*:</p>
+
+<p><img src="/img/sp-use.png" alt="sp use" style="width: 43%; height: 43%;" /></p>
+
+<h2 id="design">Design</h2>
+<p>The following visualization* best fits my Stream Processor design. A stream of data sent to parallel nodes sending output to operators.</p>
+
+<p><img src="/img/sp-design.png" alt="sp design" style="width: 50%; height: 50%;" /></p>
+
+<h2 id="capabilities">Capabilities</h2>
+<p>My Stream Processor has the following capabilities*:</p>
+
+<p><img src="/img/sp-summary.png" alt="sp summary" /></p>
+
+<h3 id="ingest-data-from-anywhere">Ingest Data from Anywhere</h3>
+<p>Data can be retrieved from anywhere data is generated. The only requirement is it needs to be ingested into the Stream Processor from the <a href="/java/2021/03/04/stream-emitter.html">Stream Emitter</a>. Structured or unstructured, what matters is getting the data to the Stream Processor. From there, it is up to the processing engine to process it.</p>
+
+<h3 id="arbitrary-processing-code">Arbitrary Processing Code</h3>
+<p>A developer can write their own workflow using this Stream Processor.</p>
+
+<p>What does arbitrary processing code mean, <em>exactly</em>?</p>
+
+<p><img src="/img/thermometer.png" class="inline-icon" style="width: 32px; height: 32px;" /> Imagine <em>I</em> want to process and alert on significant conditions in temperature sensors scattered about my farm.</p>
+
+<p><img src="/img/fish.png" class="inline-icon" style="width: 32px; height: 32px;" /> <em>You</em> may want to process how many fish swim by your laser sensor in the lake on two different sides on average per hour.</p>
+
+<p>Our needs are not the same, but we can <em>both</em> extend and use my Stream Processor to handle our scenarios. The code we write to process our data will not be the same.</p>
+
+<h3 id="parallel-tasks">Parallel Tasks</h3>
+<p>My Stream Processor has the ability to have concurrent threads working on the same task. Each one would be assigned data that came into the Stream Processor. Working with out of order data was out of the scope of this project, although, it would be a concern for a real scenario.</p>
+
+<h3 id="operators">Operators</h3>
+<p>Operators are the nodes working on processing the data and can be chained in a series to extend the processing chain. The processing chain is modeled as the workflow of data processing.</p>
+
+<p><img src="/img/fish.png" class="inline-icon" style="width: 32px; height: 32px;" /> You may want to keep track of how many fish in total you’ve seen. At some point in your workflow, you’d write an operator keeping track of simply that.</p>
+
+<h3 id="search-for-significant-conditions">Search For Significant Conditions</h3>
+<p>Operators are capable of being written to alert (e.g. send notifications or take action themselves) on a significant event/set of events occuring in a stream.</p>
+
+<p><img src="/img/thermometer.png" class="inline-icon" style="width: 32px; height: 32px;" /> I may want to know if the temperature falls below a threshold. I could write an Operator to watch for this.</p>
+
+<p><img src="/img/fish.png" class="inline-icon" style="width: 32px; height: 32px;" /> In the lake, you might want to know if you see more than 30 fish per hour swimming by your sensor. An operator could be written to listen for such an event in the stream.</p>
+
+<h2 id="thanks">Thanks</h2>
+<p>Thanks for reading about my Stream Processing experience. This is one of my biggest accomplishments so far.</p>
+
+<p>Best.</p>
+
+<h5 id="links">Links</h5>
+<p>*<em>(taken from my presentation at <a href="https://www.bvu.edu/">Buena Vista University</a>)</em></p>
+<div style="font-size: 10px;">
+<br />
+<a target="_blank" href="https://icons8.com/icon/49188/splunk">Splunk</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://icons8.com/icon/13679/java">Java</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://icons8.com/icon/poFZHQZ-CjsC/thermometer">Thermometer</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://icons8.com/icon/16040/fish">Fish</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>
+
+<style>
+#splunk-icon {
+    display: inline-block; 
+    vertical-align: middle; 
+    width: 101px; height: 40px;
+}
+</style>
+
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

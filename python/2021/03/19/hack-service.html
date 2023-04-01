@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Hack Service</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Hack Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In Computer Security at BVU, we had the opportunity to write a hackable service. I built a proof-of-concept SQL injection site modeled after a bank website. The site uses flask as a Python backend and sqlite3 as the database being hacked." />
+<meta property="og:description" content="In Computer Security at BVU, we had the opportunity to write a hackable service. I built a proof-of-concept SQL injection site modeled after a bank website. The site uses flask as a Python backend and sqlite3 as the database being hacked." />
+<link rel="canonical" href="https://tfreese56.github.io/python/2021/03/19/hack-service.html" />
+<meta property="og:url" content="https://tfreese56.github.io/python/2021/03/19/hack-service.html" />
+<meta property="og:site_name" content="Tyler F." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-19T09:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hack Service" />
+<script type="application/ld+json">
+{"headline":"Hack Service","dateModified":"2021-03-19T09:00:00-05:00","datePublished":"2021-03-19T09:00:00-05:00","description":"In Computer Security at BVU, we had the opportunity to write a hackable service. I built a proof-of-concept SQL injection site modeled after a bank website. The site uses flask as a Python backend and sqlite3 as the database being hacked.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tfreese56.github.io/python/2021/03/19/hack-service.html"},"url":"https://tfreese56.github.io/python/2021/03/19/hack-service.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://tfreese56.github.io/feed.xml" title="Tyler F." /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">Home</a><article>
+  <p class="post-meta">
+    <time datetime="2021-03-19 09:00:00 -0500">March 2021</time>
+  </p>
+  
+  <h1>Hack Service</h1>
+
+  <link rel="stylesheet" href="/css/styles.css" />
+
+<p>In Computer Security at BVU, we had the opportunity to write a hackable service. I built a proof-of-concept SQL injection site modeled after a bank website. The site uses flask as a Python <img src="/img/python.png" class="inline-icon" /> backend and sqlite3 as the database being hacked.</p>
+
+<h3 id="the-hack">The Hack</h3>
+<p><img src="/img/incredi-safe-bank.png" alt="incredi-safe-bank home page" style="margin-bottom: 20px;" />
+On the banking website, there are banking tools such as a loan interest calculator, a real calculator, a stock ticker tape, and an info box about your connection. These interactive tools are just for looks. To use the website, a client can register, login, and search for users to send money to.</p>
+
+<p>The story is a developer accidently included the passwords with the usernames when a client runs a search. Therefore, being able to see passwords in plain text, you would want to find the admin password to get the flag in a CTF contest.</p>
+
+<h4 id="steps-to-the-hack">Steps to the hack</h4>
+<ol>
+  <li>Register &amp; login</li>
+  <li>Search for yourself in search bar and observe the results are USER [ Account Number ] | PASSWORD
+    <ul>
+      <li>Shame on the dev for including “| PASSWORD”…</li>
+    </ul>
+  </li>
+  <li>Perform a SQL injection in the search bar of <code class="language-plaintext highlighter-rouge">ANYTHING' or '1' = '1</code></li>
+  <li>Find the admin user &amp; password on the page</li>
+  <li>Logout</li>
+  <li>Login as admin</li>
+  <li>Click FLAG ME</li>
+  <li>You’ve hacked the service</li>
+</ol>
+
+<h4 id="sql-injection">SQL Injection</h4>
+<p>The query hacked is:</p>
+
+<p><code class="language-plaintext highlighter-rouge">SELECT username, accountNum, password FROM customers WHERE username = ' + user_input + ';</code></p>
+
+<p>Certainly, the <code class="language-plaintext highlighter-rouge">user_input</code> being injected right into the query (no sanitization) is troublesome. This injection is not found in the registration or sign in functionality.</p>
+
+<h4 id="extras">Extras</h4>
+<p>There are 100 randomly generated users with predetermined usernames and passwords. The passwords are simple, but random each time. The admin user is added as the 101st user also with a randomly generated password.</p>
+
+<h3 id="screenshot-tutorial">Screenshot tutorial</h3>
+
+<h4 id="new-user-registered-and-searched">New user registered and searched</h4>
+<p><img src="/img/incredi-safe-bank_usersearch.png" alt="incredi-safe-bank user search" style="margin: 20px;" /></p>
+
+<h4 id="trying-admin">Trying admin</h4>
+<p><img src="/img/incredi-safe-bank_noadmin.png" alt="incredi-safe-bank no admin" style="margin: 20px;" /></p>
+
+<h4 id="sql-injection-1">SQL Injection</h4>
+<p><img src="/img/incredi-safe-bank_sql-injection.png" alt="incredi-safe-bank sql injection" style="margin: 20px;" /></p>
+
+<h4 id="hacked-admin">Hacked Admin</h4>
+<p>Finding the <code class="language-plaintext highlighter-rouge">admin</code> user and password, logging with credentials, and the <code class="language-plaintext highlighter-rouge">FLAG ME</code> button appears. Success.
+<img src="/img/incredi-safe-bank_hacked.png" alt="incredi-safe-bank found admin" style="margin: 20px;" /></p>
+
+<h3 id="ending">Ending</h3>
+<p>Thanks for reading about SQL Injections!</p>
+
+<p>Best.</p>
+
+<h5 id="links">Links</h5>
+<div style="font-size: 10px;">
+<a target="_blank" href="https://icons8.com/icon/13441/python">Python</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

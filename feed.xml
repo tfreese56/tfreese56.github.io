@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://tfreese56.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tfreese56.github.io/" rel="alternate" type="text/html" /><updated>2023-04-01T13:24:10-05:00</updated><id>https://tfreese56.github.io/feed.xml</id><title type="html">Tyler F.</title><subtitle>I&apos;m a developer who enjoys writing solid code, math, and refining my work </subtitle><entry><title type="html">Coolr</title><link href="https://tfreese56.github.io/vue/2022/12/01/coolr.html" rel="alternate" type="text/html" title="Coolr" /><published>2022-12-01T08:00:00-06:00</published><updated>2022-12-01T08:00:00-06:00</updated><id>https://tfreese56.github.io/vue/2022/12/01/coolr</id><content type="html" xml:base="https://tfreese56.github.io/vue/2022/12/01/coolr.html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot; /&gt;
+
+&lt;p&gt;For the company &lt;img src=&quot;/img/beyondlogistics.png&quot; alt=&quot;beyond logistics llc logo&quot; class=&quot;bl-icon&quot; onclick=&quot;window.location=&apos;https://beyondlogisticsllc.com&apos;&quot; /&gt;, I wrote an Order Processing Management System. The program ingested invoices, parsed, and stored them.&lt;/p&gt;
+
+&lt;p&gt;Using the invoices, we generated reports displaying data that I felt was taking too much time to hunt down ourselves manually.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/timer.png&quot; alt=&quot;timer icon&quot; class=&quot;inline-icon&quot; /&gt; The report generation gathered invoice data and revealed time sensitive, decision making information. With the simple, fast reports at hand, we spent time improving other processes. &lt;img src=&quot;/img/confetti.gif&quot; alt=&quot;confetti gif&quot; class=&quot;inline-icon&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;technologies&quot;&gt;Technologies:&lt;/h3&gt;
+&lt;div style=&quot;display: flex; align-items: center; flex-direction: row; flex-wrap: wrap;&quot;&gt;
+&lt;img src=&quot;/img/vue-small.png&quot; alt=&quot;vue logo&quot; /&gt;
+&lt;img src=&quot;/img/ionic-small.png&quot; alt=&quot;ionic logo&quot; /&gt;
+&lt;img src=&quot;/img/capacitor-small.png&quot; alt=&quot;capacitor logo&quot; /&gt;
+&lt;img src=&quot;/img/typescript-small.png&quot; alt=&quot;typescript logo&quot; /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: flex; align-items: center; flex-direction: row; flex-wrap: wrap;&quot;&gt;
+&lt;img src=&quot;/img/nodejs-small.png&quot; alt=&quot;nodejs logo&quot; /&gt;
+&lt;img src=&quot;/img/expressjs-small.png&quot; alt=&quot;expressjs logo&quot; /&gt;
+&lt;img src=&quot;/img/mongodb-small.png&quot; alt=&quot;mongodb logo&quot; /&gt;
+&lt;img src=&quot;/img/docker.png&quot; alt=&quot;docker logo&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;impact&quot;&gt;Impact&lt;/h2&gt;
+
+&lt;h4 id=&quot;tldr&quot;&gt;TL;DR&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/img/prize.png&quot; alt=&quot;prize logo&quot; class=&quot;inline-icon&quot; /&gt; Saved our daily routine 8 working hours.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/prize.png&quot; alt=&quot;prize logo&quot; class=&quot;inline-icon&quot; /&gt; Errors reduced to around once or twice a month.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/prize.png&quot; alt=&quot;prize logo&quot; class=&quot;inline-icon&quot; /&gt; Tracked invoice history.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/prize.png&quot; alt=&quot;prize logo&quot; class=&quot;inline-icon&quot; /&gt; Product location sped up order assembly.&lt;/p&gt;
+
+&lt;h3 id=&quot;precious-time-saved&quot;&gt;Precious Time Saved&lt;/h3&gt;
+&lt;p&gt;After comparing differences between before and after Coolr, we estimate this program saved our daily routine 8 working hours. The time saved was spent refining  other processes and gaining an understanding of future improvements to the workflow.&lt;/p&gt;
+
+&lt;p&gt;We also gained more peace of mind knowing the technology had our backs reporting accurate info. Of course, it relied on us supplying the data. But once in, the difficult, laborious work was given to the computer. Which, can do it faster and with less error!&lt;/p&gt;
+
+&lt;h3 id=&quot;less-error&quot;&gt;Less Error&lt;/h3&gt;
+&lt;p&gt;Using Coolr, we were able to reduce our true errors to about once or twice a month in the daily processes that took place. Errors included missing product or incomplete orders.&lt;/p&gt;
+
+&lt;h3 id=&quot;tracking-changes&quot;&gt;Tracking Changes&lt;/h3&gt;
+&lt;p&gt;A historical chain of invoices was viewable for each invoice stored.&lt;/p&gt;
+
+&lt;p&gt;This made the necessary daily workflow changes easier to adjust to. Before, these changes weren’t so obvious.&lt;/p&gt;
+
+&lt;h3 id=&quot;product-location&quot;&gt;Product Location&lt;/h3&gt;
+&lt;p&gt;Coolr’s final major feature was inventory location for each product. Working this into the system was a huge time saver per day. Instead of searching for product, we were able to go right to the product needed.&lt;/p&gt;
+
+&lt;h3 id=&quot;thanks&quot;&gt;Thanks&lt;/h3&gt;
+&lt;p&gt;Thanks for taking time to read about Coolr!&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;Links&lt;/h5&gt;
+&lt;div style=&quot;font-size: 10px;&quot;&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/22625/timer&quot;&gt;Timer&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/bwkO4JtSGTOX/confetti&quot;&gt;Confetti&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.png&quot;&gt;Node logo&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png&quot;&gt;Express logo&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png&quot;&gt;MongoDB logo&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/cdYUlRaag9G9/docker&quot;&gt;Docker&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/31RoSvu1j6h1/prize&quot;&gt;Prize&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+
+
+
+&lt;/div&gt;
+
+&lt;style&gt;
+.bl-icon {
+    width: 20%; 
+    height: 20%; 
+    display: inline-block; 
+    vertical-align: middle;
+}
+.bl-icon:hover {
+    cursor: pointer; 
+}
+&lt;/style&gt;</content><author><name></name></author><category term="vue" /><category term="Showcase" /><category term="Vue" /><summary type="html"></summary></entry><entry><title type="html">Checkbook Online</title><link href="https://tfreese56.github.io/python/2022/05/30/checkbook-online.html" rel="alternate" type="text/html" title="Checkbook Online" /><published>2022-05-30T09:00:00-05:00</published><updated>2022-05-30T09:00:00-05:00</updated><id>https://tfreese56.github.io/python/2022/05/30/checkbook-online</id><content type="html" xml:base="https://tfreese56.github.io/python/2022/05/30/checkbook-online.html">&lt;p&gt;Checkbook Online is my previous project, &lt;a href=&quot;/java/2020/02/17/checkbook.html&quot;&gt;Checkbook&lt;/a&gt;, but a website version. I wanted to manage my money from a desktop or mobile device from anywhere. Thus, I migrated my Checkbook project to a Django-Python web application.&lt;/p&gt;
+
+&lt;p&gt;Technical specifics: Two docker containers ran in the production environment, one for running Checkbook and one for a MySQL database.&lt;/p&gt;
+
+&lt;p&gt;I used self-signed certificates with Nginx to secure the communication with TLSv1.3.&lt;/p&gt;
+
+&lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
+&lt;div style=&quot;display: flex; flex-direction: row; flex-wrap: wrap;&quot;&gt;
+&lt;img src=&quot;/img/django.png&quot; alt=&quot;django logo&quot; /&gt;
+&lt;img src=&quot;/img/python.png&quot; alt=&quot;python logo&quot; /&gt;
+&lt;img src=&quot;/img/docker.png&quot; alt=&quot;docker logo&quot; /&gt;
+&lt;img src=&quot;/img/mysql.png&quot; alt=&quot;mysql logo&quot; /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: flex; align-items: center; justify-content: center; flex-wrap: wrap;&quot;&gt;
+&lt;div style=&quot;display: flex; align-items: center; justify-content: center;&quot;&gt;
+&lt;img src=&quot;/img/uwsgi-small.png&quot; alt=&quot;uwsgi logo&quot; style=&quot;margin: 5px; width: 84px; height: 45px;&quot; /&gt;
+&lt;img src=&quot;/img/nginx.png&quot; alt=&quot;nginx logo&quot; /&gt;
+&lt;img src=&quot;/img/encrypt.png&quot; alt=&quot;encrypt logo&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;web-app&quot;&gt;Web app&lt;/h2&gt;
+
+&lt;h3 id=&quot;index-page-moving-background-on-actual-site&quot;&gt;Index page; (moving background on actual site)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tfcb-main.png&quot; alt=&quot;tfcb main&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;home-page-shows-basic-current-information&quot;&gt;Home page; shows basic current information&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tfcb-home.png&quot; alt=&quot;tfcb home&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;search-page-query-transactions-given-criteria&quot;&gt;Search page; query transactions given criteria&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Amounts and descriptions redacted.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tfcb-search.png&quot; alt=&quot;tfcb search&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;search-page-results&quot;&gt;Search page results&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Amounts, descriptions, and dates redacted.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The following statistics could be generated over a specified time period.
+The number of transactions found is also reported.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Greatest income &amp;amp; Largest expense
+
+Average gain/loss per transaction - divide profit out amongst all transactions
+
+Min/Max Subarrays - calculate (using min/max algorithm) the time period where the greatest gain and largest loss occurred
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tfcb-search-results.png&quot; alt=&quot;tfcb search results&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;demise&quot;&gt;Demise&lt;/h2&gt;
+
+&lt;p&gt;Recently (2023), I started using &lt;a href=&quot;https://www.gnucash.org/&quot;&gt;GnuCash&lt;/a&gt;. GnuCash replaced this web application for managing my finances.&lt;/p&gt;
+
+&lt;p&gt;GnuCash can do it all, more than I ever wanted in my program. So, I chose not to reinvent the wheel and migrate to GnuCash.&lt;/p&gt;
+
+&lt;p&gt;I’ve successfully kept all of my transaction data since 2018 when I started managing my finances in college with &lt;a href=&quot;/java/2020/02/17/checkbook.html&quot;&gt;Checkbook&lt;/a&gt;. I had over 1,000 transactions stored at the time of moving (Janurary 2023).&lt;/p&gt;
+
+&lt;h3 id=&quot;thanks&quot;&gt;Thanks&lt;/h3&gt;
+&lt;p&gt;Thank you for taking the time to read about my Checkbook online experience!&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;Links&lt;/h5&gt;
+&lt;div style=&quot;font-size: 10px;&quot;&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/XPdRFanRZtNK/django&quot;&gt;Django&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/13441/python&quot;&gt;Python&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/cdYUlRaag9G9/docker&quot;&gt;Docker&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/UFXRpPFebwa2/mysql-logo&quot;&gt;MySQL Logo&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://www.nginx.com/wp-content/uploads/2018/08/NGINX-logo-rgb-large.png&quot;&gt;Nginx&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://pythonist.ru/wp-content/uploads/2020/05/uwsgi.jpg&quot;&gt;uWSGI&lt;/a&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="python" /><category term="Python" /><summary type="html">Checkbook Online is my previous project, Checkbook, but a website version. I wanted to manage my money from a desktop or mobile device from anywhere. Thus, I migrated my Checkbook project to a Django-Python web application.</summary></entry><entry><title type="html">Encrypted File System</title><link href="https://tfreese56.github.io/c/2021/12/11/tfs-cwad.html" rel="alternate" type="text/html" title="Encrypted File System" /><published>2021-12-11T08:00:00-06:00</published><updated>2021-12-11T08:00:00-06:00</updated><id>https://tfreese56.github.io/c/2021/12/11/tfs-cwad</id><content type="html" xml:base="https://tfreese56.github.io/c/2021/12/11/tfs-cwad.html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot; /&gt;
+
+&lt;p&gt;This project is an extension of my other project &lt;a href=&quot;/c/2021/12/01/file-system.html&quot;&gt;File System&lt;/a&gt;. Encrypted File System encrypts meta data and file data before storage and erases by overwriting with zero bytes.&lt;/p&gt;
+
+&lt;p&gt;Programming language: &lt;img src=&quot;/img/c.png&quot; alt=&quot;c programming&quot; class=&quot;inline-icon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Library for cryptography: &lt;img src=&quot;/img/openssl-small.png&quot; alt=&quot;openssl logo&quot; style=&quot;display: inline-block; vertical-align: middle;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;extending-the-file-system&quot;&gt;Extending the File System&lt;/h2&gt;
+&lt;p&gt;The Encrypted File System uses 32 byte keys generated with OpenSSL’s random bytes. The algorithm used to encrypt the meta and file data is AES-256-GCM.&lt;/p&gt;
+
+&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;My goals for adding cryptography to the File System were to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;provide “disk level” encryption handled by the File System&lt;/li&gt;
+  &lt;li&gt;erase user data with 0’s on unlink&lt;/li&gt;
+  &lt;li&gt;each file gets its own 32 byte key for encryption which is destroyed on unlink&lt;/li&gt;
+  &lt;li&gt;user can interact with the file system just like the original&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My motivation to compelete this project (~ December 2021) was merely proof-of-concept for myself.&lt;/p&gt;
+
+&lt;p&gt;I enjoy stretching my skills and capabilities into the unknown to learn more.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing&quot;&gt;Testing&lt;/h2&gt;
+&lt;p&gt;I used the same suite of tests written for the original File System and added extra crypto tests. Given I wanted the user interface to be no different than the regular file system, all tests should pass just like they did in the original File System.&lt;/p&gt;
+
+&lt;h2 id=&quot;success&quot;&gt;Success&lt;/h2&gt;
+&lt;p&gt;What could the final product do differently than the original File System?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Each new file receives its own key, is encrypted as a whole, then written block by block. The file system now accounts for key storage in front of the file data. When a user wants to read a file, the file system decrypts the ciphertext and provides the plaintext.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;At the front of the system, the meta data is now encrypted with a 32 byte key. On open/initialize, the meta data is decrypted and stored in memory. On close, it is re-encrypted and written to disk.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;thanks&quot;&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Thanks for your time reviewing my Encrypted File System project.&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;Links&lt;/h5&gt;
+&lt;div style=&quot;font-size: 10px;&quot;&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/40670/c-programming&quot;&gt;C Programming&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://fossa.com/blog/content/images/2022/10/openssl.png&quot;&gt;OpenSSL logo&lt;/a&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="c" /><category term="C" /><summary type="html">This project is an extension of my other project File System. Encrypted File System encrypts meta data and file data before storage and erases by overwriting with zero bytes.</summary></entry><entry><title type="html">File System</title><link href="https://tfreese56.github.io/c/2021/12/01/file-system.html" rel="alternate" type="text/html" title="File System" /><published>2021-12-01T08:00:00-06:00</published><updated>2021-12-01T08:00:00-06:00</updated><id>https://tfreese56.github.io/c/2021/12/01/file-system</id><content type="html" xml:base="https://tfreese56.github.io/c/2021/12/01/file-system.html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot; /&gt;
+
+&lt;p&gt;This is an implementation of a file system by the parameters specified by &lt;a href=&quot;https://www.bvu.edu/academics/faculty/nathan-backman&quot;&gt;Dr. Nathan Backman&lt;/a&gt; of &lt;a href=&quot;https://www.bvu.edu/&quot;&gt;Buena Vista University&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Originally written with &lt;a href=&quot;https://github.com/jackmford&quot;&gt;@jackmford&lt;/a&gt; &lt;img src=&quot;/img/github.png&quot; class=&quot;inline-icon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I spent Summer 2020 rewriting and improving the code to gain a deeper understanding of file systems.&lt;/p&gt;
+
+&lt;p&gt;Programming language: &lt;img src=&quot;/img/c.png&quot; alt=&quot;c programming&quot; class=&quot;inline-icon&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+&lt;p&gt;Requirements of this project were to implement the following funcionalities of a file system:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;span class=&quot;design-requirement&quot;&gt;init&lt;/span&gt; - setup file system for reading, writing, and storing data&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;design-requirement&quot;&gt;destroy&lt;/span&gt; - save important file system pointers and info to disk on exit&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;design-requirement&quot;&gt;open/close&lt;/span&gt; - enforce rules of opening and closing files; hand off pointers to file data blocks&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;design-requirement&quot;&gt;read&lt;/span&gt; - algorithm for reading file data; parameters including bytes to read, output location&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;design-requirement&quot;&gt;write&lt;/span&gt; - algorithm for writing file data using available file system blocks&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;design-requirement&quot;&gt;unlink&lt;/span&gt; - remove a file from the file system and free its data blocks&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;design-requirement&quot;&gt;list files&lt;/span&gt; - list file names of currently stored files&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;test-suite&quot;&gt;Test Suite&lt;/h2&gt;
+&lt;p&gt;As I rewrote the code, I wrote out a test suite extending the one we were provided. The test suite included tests such as:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;attempt to write one byte more than allocated to the file&lt;/li&gt;
+  &lt;li&gt;try opening a file more than once (not allowed in this file system)&lt;/li&gt;
+  &lt;li&gt;buffer over read of file bytes (reading more bytes than allocated to the file)&lt;/li&gt;
+  &lt;li&gt;try writing to a file without opening it first&lt;/li&gt;
+  &lt;li&gt;fill the file system then delete everything
+    &lt;ul&gt;
+      &lt;li&gt;ensure all the file system blocks get returned successfully&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;many more…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;greatest-challenge&quot;&gt;Greatest Challenge&lt;/h2&gt;
+&lt;p&gt;The algorithms to handle free file system blocks (providing them to files and restoring them to a free state) was a significant challenge.&lt;/p&gt;
+
+&lt;p&gt;I’d also say closing (destroying) the active &lt;em&gt;real&lt;/em&gt; file and reopening it was challenging. This required a successful exit process storing data so the next time it was opened, the file system can resume right where it left off.&lt;/p&gt;
+
+&lt;p&gt;After much testing, I was curious what more I could do with this established, working file system I had.&lt;/p&gt;
+
+&lt;p&gt;So, I turned it into an &lt;a href=&quot;/c/2021/12/11/tfs-cwad.html&quot;&gt;Encrypted File System&lt;/a&gt;. &lt;img src=&quot;/img/encrypt.png&quot; alt=&quot;encrypted icon&quot; class=&quot;inline-icon&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;thanks&quot;&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Thank you for checking out my File System project. Read about the &lt;a href=&quot;/c/2021/12/11/tfs-cwad.html&quot;&gt;Encrypted File System&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;Links&lt;/h5&gt;
+&lt;div style=&quot;font-size: 10px;&quot;&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/AZOZNnY73haj/github&quot;&gt;GitHub&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/40670/c-programming&quot;&gt;C Programming&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.design-requirement {
+    font-family: &apos;Courier New&apos;, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}
+&lt;/style&gt;</content><author><name></name></author><category term="c" /><category term="C" /><summary type="html">This is an implementation of a file system by the parameters specified by Dr. Nathan Backman of Buena Vista University.</summary></entry><entry><title type="html">Distributed Hash Table</title><link href="https://tfreese56.github.io/python/2021/04/20/distributed-hash-table.html" rel="alternate" type="text/html" title="Distributed Hash Table" /><published>2021-04-20T09:00:00-05:00</published><updated>2021-04-20T09:00:00-05:00</updated><id>https://tfreese56.github.io/python/2021/04/20/distributed-hash-table</id><content type="html" xml:base="https://tfreese56.github.io/python/2021/04/20/distributed-hash-table.html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot; /&gt;
+
+&lt;p&gt;In Networks &amp;amp; Distributed Systems class, we were assigned to write a Distributed Hash Table (DHT) in Python &lt;img src=&quot;/img/python.png&quot; class=&quot;inline-icon&quot; /&gt;. The DHT protocol was provided by &lt;a href=&quot;https://www.bvu.edu/academics/faculty/nathan-backman&quot;&gt;Dr. Nathan Backman&lt;/a&gt; of &lt;a href=&quot;https://www.bvu.edu/&quot;&gt;Buena Vista University&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Originally written with &lt;a href=&quot;https://github.com/jackmford&quot;&gt;@jackmford&lt;/a&gt; &lt;img src=&quot;/img/github.png&quot; class=&quot;inline-icon&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;dht&quot;&gt;DHT&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/img/chord-route.png&quot; alt=&quot;DHT chord route&quot; style=&quot;width: 35%; height: 35%; margin-bottom: 20px;&quot; /&gt;
+This is &lt;em&gt;easily&lt;/em&gt; in my top three favorite projects/assignments at BVU.&lt;/p&gt;
+
+&lt;p&gt;Post college, I spent time refining the code and creating a Python &lt;img src=&quot;/img/python.png&quot; class=&quot;inline-icon&quot; /&gt; interface to the main DHT code.&lt;/p&gt;
+
+&lt;h3 id=&quot;best-part&quot;&gt;Best part&lt;/h3&gt;
+&lt;p&gt;Implementing the ownership algorithm (how the nodes determine who owns a specific hash) was the most challenging but rewarding piece.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-what-is-it&quot;&gt;So, what is it??&lt;/h2&gt;
+&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
+&lt;p&gt;Decentralized storage using ( Key, Value ) pairs.&lt;/p&gt;
+
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+&lt;p&gt;The entire ring is reachable from any entry point (a node [computer participating in the DHT]). Then the user can store ( Key, Value ) pairs within the system that can be retrieved again later.&lt;/p&gt;
+
+&lt;p&gt;As mentioned on the &lt;a href=&quot;/python/2020/05/13/chat-channels.html&quot;&gt;Chat Channels&lt;/a&gt; page, benefits of a DHT are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Data persists as long as the DHT does
+    &lt;ul&gt;
+      &lt;li&gt;being decentralized, data shifts owners as nodes enter and exit the DHT&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Decentralization means no single computer is in charge of the system
+    &lt;ul&gt;
+      &lt;li&gt;nodes communicate and adjust ownership accordingly&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;K-Safety (not implemented here)
+    &lt;ul&gt;
+      &lt;li&gt;storing backups of data with predecessors in case sudden removal of a node&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;/h3&gt;
+&lt;p&gt;I think &lt;a href=&quot;https://hazelcast.com/glossary/distributed-hash-table/&quot;&gt;Hazelcast’s&lt;/a&gt; definition explains it best:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/hazelcast-expl.png&quot; alt=&quot;Hazelcast dht explanation&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;visualization&quot;&gt;Visualization&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/img/DHT_VIS.png&quot; alt=&quot;dht visualization&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;data-types&quot;&gt;Data Types&lt;/h2&gt;
+&lt;p&gt;Data types our DHT adhered to.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Key/hash: SHA-1, 160-bit, 20-byte UTF-8
+    &lt;ul&gt;
+      &lt;li&gt;Key used to lookup values in the DHT&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;valSize: 8-byte, big endian
+    &lt;ul&gt;
+      &lt;li&gt;valSize is the size of the data being stored&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;peerAddress: [4-byte ip][2-byte port big endian]&lt;/li&gt;
+  &lt;li&gt;peerHash/key: SHA-1 hash of “IP:Port”
+    &lt;ul&gt;
+      &lt;li&gt;Example: SHA1( “192.168.0.1:5000” )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;operations&quot;&gt;Operations&lt;/h2&gt;
+&lt;p&gt;A few of our DHT operations:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Insert - Add/update/replace an item to/in the DHT
+Remove - Removes an item from the DHT
+Get - Retrieves an item from the DHT
+Exists - Check to see if an item exists within the DHT
+Owns - Asks a peer who they know to be the nearest owner to a key
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;thanks&quot;&gt;Thanks&lt;/h3&gt;
+&lt;p&gt;Thanks for reading about my experience with the Distributed Hash Table.&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;Links&lt;/h5&gt;
+&lt;div style=&quot;font-size: 10px;&quot;&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/13441/python&quot;&gt;Python&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+DHT chord &lt;a target=&quot;_blank&quot; href=&quot;https://tristanpenman.com/blog/images/implementing-a-dht-with-scala-and-akka/chord-route@2x.png&quot;&gt;visualization&lt;/a&gt;
+&lt;br /&gt;
+DHT node &lt;a target=&quot;_blank&quot; href=&quot;https://sujithjay.com/public/DHT-Dynamo.png&quot;&gt;visualization&lt;/a&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="python" /><category term="Python" /><summary type="html">In Networks &amp;amp; Distributed Systems class, we were assigned to write a Distributed Hash Table (DHT) in Python . The DHT protocol was provided by Dr. Nathan Backman of Buena Vista University.</summary></entry><entry><title type="html">X Device Locker</title><link href="https://tfreese56.github.io/ionic/2021/04/18/x-device-locker.html" rel="alternate" type="text/html" title="X Device Locker" /><published>2021-04-18T09:00:00-05:00</published><updated>2021-04-18T09:00:00-05:00</updated><id>https://tfreese56.github.io/ionic/2021/04/18/x-device-locker</id><content type="html" xml:base="https://tfreese56.github.io/ionic/2021/04/18/x-device-locker.html">&lt;p&gt;X Device Locker is an app storing ( Key, Value ) pairs where the Value is encrypted using the user’s password. The original intention was for a user to have a completely local, secure password storage for their online services.&lt;/p&gt;
+
+&lt;p&gt;Technologies:&lt;/p&gt;
+&lt;div style=&quot;display: flex; align-items: center; flex-direction: row; flex-wrap: wrap;&quot;&gt;
+&lt;img src=&quot;/img/vue-small.png&quot; alt=&quot;vue logo&quot; /&gt;
+&lt;img src=&quot;/img/ionic-small.png&quot; alt=&quot;ionic logo&quot; /&gt;
+&lt;img src=&quot;/img/capacitor-small.png&quot; alt=&quot;capacitor logo&quot; /&gt;
+&lt;img src=&quot;/img/typescript-small.png&quot; alt=&quot;typescript logo&quot; /&gt;
+&lt;img src=&quot;/img/android-studio-logo.png&quot; alt=&quot;android studio logo&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;first-step&quot;&gt;First Step&lt;/h2&gt;
+&lt;p&gt;First, a user sets a main password that is used to protect all the passwords to the services they input.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tcloud-register.png&quot; alt=&quot;x device locker register&quot; class=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;login&quot;&gt;Login&lt;/h2&gt;
+&lt;p&gt;The login page the user sees each time they reopen the app. The user has the ability to change their main password and on doing so, each of their passowrds is re-encrypted with the new main password.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tcloud-login.png&quot; alt=&quot;x device locker login&quot; class=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;services&quot;&gt;Services&lt;/h2&gt;
+&lt;p&gt;An example list of services and passwords.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tcloud-main.png&quot; alt=&quot;x device locker main&quot; class=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;thanks&quot;&gt;Thanks&lt;/h3&gt;
+&lt;p&gt;I appreciate you visiting my X Device Locker project!&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;style&gt;
+.screenshot {
+    height: 40%;
+    width: 40%;
+}
+&lt;/style&gt;</content><author><name></name></author><category term="ionic" /><category term="Vue" /><summary type="html">X Device Locker is an app storing ( Key, Value ) pairs where the Value is encrypted using the user’s password. The original intention was for a user to have a completely local, secure password storage for their online services.</summary></entry><entry><title type="html">Processing a Stream of Endless Data</title><link href="https://tfreese56.github.io/java/2021/03/26/stream-processor.html" rel="alternate" type="text/html" title="Processing a Stream of Endless Data" /><published>2021-03-26T09:00:00-05:00</published><updated>2021-03-26T09:00:00-05:00</updated><id>https://tfreese56.github.io/java/2021/03/26/stream-processor</id><content type="html" xml:base="https://tfreese56.github.io/java/2021/03/26/stream-processor.html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot; /&gt;
+
+&lt;p&gt;Inspired by my work in Information Security with &lt;img src=&quot;/img/splunk.png&quot; id=&quot;splunk-icon&quot; /&gt;, I built a Stream Processor for my capstone project.&lt;/p&gt;
+
+&lt;p&gt;My Stream Processor can handle a continuous stream of events, parse, then alert on a desired event in the stream.&lt;/p&gt;
+
+&lt;p&gt;Extensible code was one of my main focuses developing this project. The main extensible part of the finished project is the workflow processing code. With this, one can create a workflow of operators that fit their unique stream of data.&lt;/p&gt;
+
+&lt;p&gt;Programming language: Java &lt;img src=&quot;/img/java.png&quot; class=&quot;inline-icon&quot; style=&quot;width: 64px; height: 64px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;stream-processors&quot;&gt;Stream Processors&lt;/h2&gt;
+&lt;p&gt;What are Stream Processors? They are meant for data that essentially could never end.&lt;/p&gt;
+
+&lt;p&gt;Think of the following*:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sp-use.png&quot; alt=&quot;sp use&quot; style=&quot;width: 43%; height: 43%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+&lt;p&gt;The following visualization* best fits my Stream Processor design. A stream of data sent to parallel nodes sending output to operators.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sp-design.png&quot; alt=&quot;sp design&quot; style=&quot;width: 50%; height: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;capabilities&quot;&gt;Capabilities&lt;/h2&gt;
+&lt;p&gt;My Stream Processor has the following capabilities*:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sp-summary.png&quot; alt=&quot;sp summary&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ingest-data-from-anywhere&quot;&gt;Ingest Data from Anywhere&lt;/h3&gt;
+&lt;p&gt;Data can be retrieved from anywhere data is generated. The only requirement is it needs to be ingested into the Stream Processor from the &lt;a href=&quot;/java/2021/03/04/stream-emitter.html&quot;&gt;Stream Emitter&lt;/a&gt;. Structured or unstructured, what matters is getting the data to the Stream Processor. From there, it is up to the processing engine to process it.&lt;/p&gt;
+
+&lt;h3 id=&quot;arbitrary-processing-code&quot;&gt;Arbitrary Processing Code&lt;/h3&gt;
+&lt;p&gt;A developer can write their own workflow using this Stream Processor.&lt;/p&gt;
+
+&lt;p&gt;What does arbitrary processing code mean, &lt;em&gt;exactly&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/thermometer.png&quot; class=&quot;inline-icon&quot; style=&quot;width: 32px; height: 32px;&quot; /&gt; Imagine &lt;em&gt;I&lt;/em&gt; want to process and alert on significant conditions in temperature sensors scattered about my farm.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/fish.png&quot; class=&quot;inline-icon&quot; style=&quot;width: 32px; height: 32px;&quot; /&gt; &lt;em&gt;You&lt;/em&gt; may want to process how many fish swim by your laser sensor in the lake on two different sides on average per hour.&lt;/p&gt;
+
+&lt;p&gt;Our needs are not the same, but we can &lt;em&gt;both&lt;/em&gt; extend and use my Stream Processor to handle our scenarios. The code we write to process our data will not be the same.&lt;/p&gt;
+
+&lt;h3 id=&quot;parallel-tasks&quot;&gt;Parallel Tasks&lt;/h3&gt;
+&lt;p&gt;My Stream Processor has the ability to have concurrent threads working on the same task. Each one would be assigned data that came into the Stream Processor. Working with out of order data was out of the scope of this project, although, it would be a concern for a real scenario.&lt;/p&gt;
+
+&lt;h3 id=&quot;operators&quot;&gt;Operators&lt;/h3&gt;
+&lt;p&gt;Operators are the nodes working on processing the data and can be chained in a series to extend the processing chain. The processing chain is modeled as the workflow of data processing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/fish.png&quot; class=&quot;inline-icon&quot; style=&quot;width: 32px; height: 32px;&quot; /&gt; You may want to keep track of how many fish in total you’ve seen. At some point in your workflow, you’d write an operator keeping track of simply that.&lt;/p&gt;
+
+&lt;h3 id=&quot;search-for-significant-conditions&quot;&gt;Search For Significant Conditions&lt;/h3&gt;
+&lt;p&gt;Operators are capable of being written to alert (e.g. send notifications or take action themselves) on a significant event/set of events occuring in a stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/thermometer.png&quot; class=&quot;inline-icon&quot; style=&quot;width: 32px; height: 32px;&quot; /&gt; I may want to know if the temperature falls below a threshold. I could write an Operator to watch for this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/fish.png&quot; class=&quot;inline-icon&quot; style=&quot;width: 32px; height: 32px;&quot; /&gt; In the lake, you might want to know if you see more than 30 fish per hour swimming by your sensor. An operator could be written to listen for such an event in the stream.&lt;/p&gt;
+
+&lt;h2 id=&quot;thanks&quot;&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Thanks for reading about my Stream Processing experience. This is one of my biggest accomplishments so far.&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;Links&lt;/h5&gt;
+&lt;p&gt;*&lt;em&gt;(taken from my presentation at &lt;a href=&quot;https://www.bvu.edu/&quot;&gt;Buena Vista University&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;div style=&quot;font-size: 10px;&quot;&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/49188/splunk&quot;&gt;Splunk&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/13679/java&quot;&gt;Java&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/poFZHQZ-CjsC/thermometer&quot;&gt;Thermometer&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/16040/fish&quot;&gt;Fish&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+#splunk-icon {
+    display: inline-block; 
+    vertical-align: middle; 
+    width: 101px; height: 40px;
+}
+&lt;/style&gt;</content><author><name></name></author><category term="java" /><category term="Showcase" /><category term="Java" /><summary type="html">Inspired by my work in Information Security with , I built a Stream Processor for my capstone project.</summary></entry><entry><title type="html">Hack Service</title><link href="https://tfreese56.github.io/python/2021/03/19/hack-service.html" rel="alternate" type="text/html" title="Hack Service" /><published>2021-03-19T09:00:00-05:00</published><updated>2021-03-19T09:00:00-05:00</updated><id>https://tfreese56.github.io/python/2021/03/19/hack-service</id><content type="html" xml:base="https://tfreese56.github.io/python/2021/03/19/hack-service.html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot; /&gt;
+
+&lt;p&gt;In Computer Security at BVU, we had the opportunity to write a hackable service. I built a proof-of-concept SQL injection site modeled after a bank website. The site uses flask as a Python &lt;img src=&quot;/img/python.png&quot; class=&quot;inline-icon&quot; /&gt; backend and sqlite3 as the database being hacked.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-hack&quot;&gt;The Hack&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/img/incredi-safe-bank.png&quot; alt=&quot;incredi-safe-bank home page&quot; style=&quot;margin-bottom: 20px;&quot; /&gt;
+On the banking website, there are banking tools such as a loan interest calculator, a real calculator, a stock ticker tape, and an info box about your connection. These interactive tools are just for looks. To use the website, a client can register, login, and search for users to send money to.&lt;/p&gt;
+
+&lt;p&gt;The story is a developer accidently included the passwords with the usernames when a client runs a search. Therefore, being able to see passwords in plain text, you would want to find the admin password to get the flag in a CTF contest.&lt;/p&gt;
+
+&lt;h4 id=&quot;steps-to-the-hack&quot;&gt;Steps to the hack&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Register &amp;amp; login&lt;/li&gt;
+  &lt;li&gt;Search for yourself in search bar and observe the results are USER [ Account Number ] | PASSWORD
+    &lt;ul&gt;
+      &lt;li&gt;Shame on the dev for including “| PASSWORD”…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Perform a SQL injection in the search bar of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ANYTHING&apos; or &apos;1&apos; = &apos;1&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Find the admin user &amp;amp; password on the page&lt;/li&gt;
+  &lt;li&gt;Logout&lt;/li&gt;
+  &lt;li&gt;Login as admin&lt;/li&gt;
+  &lt;li&gt;Click FLAG ME&lt;/li&gt;
+  &lt;li&gt;You’ve hacked the service&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;sql-injection&quot;&gt;SQL Injection&lt;/h4&gt;
+&lt;p&gt;The query hacked is:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SELECT username, accountNum, password FROM customers WHERE username = &apos; + user_input + &apos;;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Certainly, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;user_input&lt;/code&gt; being injected right into the query (no sanitization) is troublesome. This injection is not found in the registration or sign in functionality.&lt;/p&gt;
+
+&lt;h4 id=&quot;extras&quot;&gt;Extras&lt;/h4&gt;
+&lt;p&gt;There are 100 randomly generated users with predetermined usernames and passwords. The passwords are simple, but random each time. The admin user is added as the 101st user also with a randomly generated password.&lt;/p&gt;
+
+&lt;h3 id=&quot;screenshot-tutorial&quot;&gt;Screenshot tutorial&lt;/h3&gt;
+
+&lt;h4 id=&quot;new-user-registered-and-searched&quot;&gt;New user registered and searched&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/img/incredi-safe-bank_usersearch.png&quot; alt=&quot;incredi-safe-bank user search&quot; style=&quot;margin: 20px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;trying-admin&quot;&gt;Trying admin&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/img/incredi-safe-bank_noadmin.png&quot; alt=&quot;incredi-safe-bank no admin&quot; style=&quot;margin: 20px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;sql-injection-1&quot;&gt;SQL Injection&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/img/incredi-safe-bank_sql-injection.png&quot; alt=&quot;incredi-safe-bank sql injection&quot; style=&quot;margin: 20px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;hacked-admin&quot;&gt;Hacked Admin&lt;/h4&gt;
+&lt;p&gt;Finding the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;admin&lt;/code&gt; user and password, logging with credentials, and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FLAG ME&lt;/code&gt; button appears. Success.
+&lt;img src=&quot;/img/incredi-safe-bank_hacked.png&quot; alt=&quot;incredi-safe-bank found admin&quot; style=&quot;margin: 20px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ending&quot;&gt;Ending&lt;/h3&gt;
+&lt;p&gt;Thanks for reading about SQL Injections!&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;Links&lt;/h5&gt;
+&lt;div style=&quot;font-size: 10px;&quot;&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/13441/python&quot;&gt;Python&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="python" /><category term="Python" /><summary type="html">In Computer Security at BVU, we had the opportunity to write a hackable service. I built a proof-of-concept SQL injection site modeled after a bank website. The site uses flask as a Python backend and sqlite3 as the database being hacked.</summary></entry><entry><title type="html">Stream Emitter</title><link href="https://tfreese56.github.io/java/2021/03/04/stream-emitter.html" rel="alternate" type="text/html" title="Stream Emitter" /><published>2021-03-04T08:00:00-06:00</published><updated>2021-03-04T08:00:00-06:00</updated><id>https://tfreese56.github.io/java/2021/03/04/stream-emitter</id><content type="html" xml:base="https://tfreese56.github.io/java/2021/03/04/stream-emitter.html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot; /&gt;
+
+&lt;p&gt;Stream Emitter emits events logged from a desired source to the &lt;a href=&quot;/java/2021/03/26/stream-processor.html&quot;&gt;Stream Processor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I recommend reading about the &lt;a href=&quot;/java/2021/03/26/stream-processor.html&quot;&gt;Stream Processor&lt;/a&gt; first.&lt;/p&gt;
+
+&lt;p&gt;Programming language: Java &lt;img src=&quot;/img/java.png&quot; class=&quot;inline-icon&quot; style=&quot;width: 64px; height: 64px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;emitting-events&quot;&gt;Emitting Events&lt;/h2&gt;
+&lt;p&gt;At the source of a data stream, the terminology I used to describe data being sent to the Stream Processor is called Events. Events are something that has happened in time. Data that has been generated in some way that ought to be processed.&lt;/p&gt;
+
+&lt;p&gt;The Stream Emitter also needs implemented by the developer. Here, the developer constructs the Event to be emitted to the Stream Processor. The Event data consists of data from the source like a timestamp, strings, numbers, or anything the source creates.&lt;/p&gt;
+
+&lt;p&gt;Once an Event is created, the Stream Emitter will handle buffering and communicating with the Stream Processor. These two may be on the same machine or different machines. There can be several Stream Emitters emitting to one Stream Processor, or multiple. The two have a many to many relationship.&lt;/p&gt;
+
+&lt;h3 id=&quot;thanks&quot;&gt;Thanks&lt;/h3&gt;
+&lt;p&gt;There’s not much to this one, however, it warranted its own explanation!&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;Links&lt;/h5&gt;
+&lt;div style=&quot;font-size: 10px;&quot;&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/13679/java&quot;&gt;Java&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="java" /><category term="Java" /><summary type="html">Stream Emitter emits events logged from a desired source to the Stream Processor.</summary></entry><entry><title type="html">Chat Channels</title><link href="https://tfreese56.github.io/python/2020/05/13/chat-channels.html" rel="alternate" type="text/html" title="Chat Channels" /><published>2020-05-13T09:00:00-05:00</published><updated>2020-05-13T09:00:00-05:00</updated><id>https://tfreese56.github.io/python/2020/05/13/chat-channels</id><content type="html" xml:base="https://tfreese56.github.io/python/2020/05/13/chat-channels.html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot; /&gt;
+
+&lt;p&gt;Chat Channels is a communications platform built on top of a &lt;a href=&quot;/python/2021/04/20/distributed-hash-table.html&quot;&gt;Distributed Hash Table&lt;/a&gt; written in Python &lt;img src=&quot;/img/python.png&quot; class=&quot;inline-icon&quot; /&gt;.&lt;/p&gt;
+
+&lt;p&gt;Goals of this platform:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Easy, ephemeral chat rooms for work/projects/friends/people&lt;/li&gt;
+  &lt;li&gt;Longer lasting chat boards for family members&lt;/li&gt;
+  &lt;li&gt;Minimal interface and user profiles&lt;/li&gt;
+  &lt;li&gt;Data stored on a decentralized structure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Additionally, I wanted a proof-of-concept use for the Distributed Hash Table (DHT) I had written from Networks &amp;amp; Distributed Systems class. I took this as the opportunity to do so.&lt;/p&gt;
+
+&lt;h3 id=&quot;chat-channels-home-page&quot;&gt;Chat Channels Home Page&lt;/h3&gt;
+&lt;p&gt;Home page of Chat Channels. Again the goal was minimal interface and user profiles.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/cc-main.png&quot; alt=&quot;home page chat channels&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;users-channels&quot;&gt;User’s Channels&lt;/h3&gt;
+&lt;p&gt;A user’s list of multiple channels that are sortable&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/cc-many.png&quot; alt=&quot;multiple page chat channels&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pros-and-cons&quot;&gt;Pros and Cons&lt;/h3&gt;
+&lt;p&gt;After completion, came up with some good and bad things about the project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/cc-proscons.png&quot; alt=&quot;pros cons chat channels&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;distributed-hash-table&quot;&gt;Distributed Hash Table&lt;/h3&gt;
+&lt;p&gt;A visualization of the &lt;a href=&quot;/python/2021/04/20/distributed-hash-table.html&quot;&gt;Distributed Hash Table&lt;/a&gt;.
+Keys for Chat Channels were the usernames; implying each new user had to have a unique username for lookup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/DHT_VIS.png&quot; alt=&quot;pros cons chat channels&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;thats-all&quot;&gt;That’s All&lt;/h3&gt;
+&lt;p&gt;Thanks for looking through Chat Channels!&lt;/p&gt;
+
+&lt;p&gt;Best.&lt;/p&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;Links&lt;/h5&gt;
+&lt;div style=&quot;font-size: 10px;&quot;&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com/icon/13441/python&quot;&gt;Python&lt;/a&gt; icon by &lt;a target=&quot;_blank&quot; href=&quot;https://icons8.com&quot;&gt;Icons8&lt;/a&gt;
+&lt;br /&gt;
+DHT &lt;a target=&quot;_blank&quot; href=&quot;https://sujithjay.com/public/DHT-Dynamo.png&quot;&gt;visualization&lt;/a&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="python" /><category term="Python" /><summary type="html">Chat Channels is a communications platform built on top of a Distributed Hash Table written in Python .</summary></entry></feed>

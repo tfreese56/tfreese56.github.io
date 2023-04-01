@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Checkbook Server</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Checkbook Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Checkbook used this server written in Java as the API to a central MySQL database storing transaction data. Symmetric AES and asymmetric RSA keys are used to communicate with the remote client." />
+<meta property="og:description" content="Checkbook used this server written in Java as the API to a central MySQL database storing transaction data. Symmetric AES and asymmetric RSA keys are used to communicate with the remote client." />
+<link rel="canonical" href="https://tfreese56.github.io/java/2019/12/20/checkbook-server.html" />
+<meta property="og:url" content="https://tfreese56.github.io/java/2019/12/20/checkbook-server.html" />
+<meta property="og:site_name" content="Tyler F." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-20T08:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Checkbook Server" />
+<script type="application/ld+json">
+{"headline":"Checkbook Server","dateModified":"2019-12-20T08:00:00-06:00","datePublished":"2019-12-20T08:00:00-06:00","description":"Checkbook used this server written in Java as the API to a central MySQL database storing transaction data. Symmetric AES and asymmetric RSA keys are used to communicate with the remote client.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tfreese56.github.io/java/2019/12/20/checkbook-server.html"},"url":"https://tfreese56.github.io/java/2019/12/20/checkbook-server.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://tfreese56.github.io/feed.xml" title="Tyler F." /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">Home</a><article>
+  <p class="post-meta">
+    <time datetime="2019-12-20 08:00:00 -0600">December 2019</time>
+  </p>
+  
+  <h1>Checkbook Server</h1>
+
+  <p><a href="/java/2020/02/17/checkbook.html">Checkbook</a> used this server written in Java <img src="/img/java.png" style="width: 32px; height: 32px; display: inline-block;" /> as the API to a central MySQL <img src="/img/mysql.png" style="width: 32px; height: 32px; display: inline-block;" /> database storing transaction data. Symmetric AES and asymmetric RSA keys are used to communicate with the remote client. 
+<img src="/img/encrypt.png" alt="" title="Encrypted" /></p>
+
+<h3 id="story">Story</h3>
+<p>My Checkbook experience evolved quickly as I went through my college classes. At the point this was successfully written, I was using the Checkbook program to store and view all the financial transactions I made. I was using a remote server (Ubuntu) to house the API and database.</p>
+
+<p>Checkbook was used all throughout my college days until it evolved again after graduation to an online website instead of a Java Swing UI and Java server.</p>
+
+<h3 id="protocol">Protocol</h3>
+<p>Client and server communicated in a request-response manner. The client had thirteen, 7 byte control messages to handle all things inserting, updating, deleting, and querying transaction data. 7 bytes? No idea why I chose that back then 0_o. I used Java’s switch statement to handle the incoming requests from the client. Example control messages: <code class="language-plaintext highlighter-rouge">GETTRAN</code>, <code class="language-plaintext highlighter-rouge">GETUSER</code>, and <code class="language-plaintext highlighter-rouge">ULOGOUT</code>.</p>
+
+<h3 id="cryptography">Cryptography</h3>
+<p>My crypto experience was essentially none at the writing of this in 2019. Humbly admitting, Stack Overflow led me to a design using <em>two</em> AES keys (so, twice encrypted) message sent over the wire from my remote client to the server. The AES keys were exchanged via the public key cryptography algorithm RSA.</p>
+
+<p>Considering any of my crypto practices <em>sound</em> is likely not truthy. In the least, I felt comfortable enough exchanging my financial information over the wire.</p>
+
+<p>Here is where the AES keys are set having been decrypted with the private RSA key:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">...</span>
+<span class="c1">// Set keys</span>
+<span class="n">key1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SecretKeySpec</span><span class="o">((</span><span class="kt">byte</span><span class="o">[])</span> <span class="o">(</span><span class="n">_result</span><span class="o">.</span><span class="na">getF</span><span class="o">())</span> <span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">16</span><span class="o">,</span> <span class="s">"AES"</span><span class="o">);</span>
+<span class="n">key2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SecretKeySpec</span><span class="o">((</span><span class="kt">byte</span><span class="o">[])</span> <span class="o">(</span><span class="n">_result</span><span class="o">.</span><span class="na">getS</span><span class="o">())</span> <span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">16</span><span class="o">,</span> <span class="s">"AES"</span><span class="o">);</span>
+<span class="o">...</span>
+</code></pre></div></div>
+
+<p>And the encryption function used to encrypt the data prior to sending:</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">...</span>
+<span class="kd">private</span> <span class="kt">byte</span><span class="o">[]</span> <span class="nf">doEncrypt</span><span class="o">(</span><span class="nc">String</span> <span class="n">plainText</span><span class="o">)</span> <span class="kd">throws</span> 
+    <span class="o">...</span>
+    <span class="o">{</span>
+        <span class="c1">// encrypt //</span>
+        
+        <span class="c1">// new method</span>
+        <span class="nc">Cipher</span> <span class="n">aesCipher</span> <span class="o">=</span> <span class="nc">Cipher</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="s">"AES"</span><span class="o">);</span>
+        <span class="n">aesCipher</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="nc">Cipher</span><span class="o">.</span><span class="na">ENCRYPT_MODE</span><span class="o">,</span> <span class="n">key1</span><span class="o">);</span>
+        <span class="c1">// Encrypt once with key one</span>
+        <span class="kt">byte</span><span class="o">[]</span> <span class="n">encryptedArray1</span> <span class="o">=</span> <span class="n">aesCipher</span><span class="o">.</span><span class="na">doFinal</span><span class="o">(</span><span class="n">plainText</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
+        
+        <span class="n">aesCipher</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="nc">Cipher</span><span class="o">.</span><span class="na">ENCRYPT_MODE</span><span class="o">,</span> <span class="n">key2</span><span class="o">);</span>
+        <span class="c1">// Encrypt again with key two</span>
+        <span class="kt">byte</span><span class="o">[]</span> <span class="n">encryptedArray2</span> <span class="o">=</span> <span class="n">aesCipher</span><span class="o">.</span><span class="na">doFinal</span><span class="o">(</span><span class="n">encryptedArray1</span><span class="o">);</span>
+        
+        <span class="k">return</span> <span class="n">encryptedArray2</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">...</span>
+</code></pre></div></div>
+
+<h3 id="ending">Ending</h3>
+<p>The end of this project’s era was the beginning of wanting to do more. I felt more could be done with the transactions and it was time to move away from my first ever CS project. Thus, <a href="/python/2022/05/30/checkbook-online.html">Checkbook Online</a> (~2020) was started.</p>
+
+<p>If you’ve read this far, thanks for checking it out. I’m open to questions about it or any curious prods you may have.</p>
+
+<p>Best.</p>
+
+<h5 id="links">Links</h5>
+<div style="font-size: 10px;">
+    <a target="_blank" href="https://icons8.com/icon/IU9BMZfRqyeY/encrypted">Encrypted</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <br />
+    <a target="_blank" href="https://icons8.com/icon/13679/java">Java</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <br />
+    <a target="_blank" href="https://icons8.com/icon/UFXRpPFebwa2/mysql-logo">MySQL Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

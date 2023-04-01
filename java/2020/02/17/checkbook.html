@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Checkbook</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Checkbook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="At the start of my coding experience (high school, 2016), I started a “business game” that I soon used to track my income and expenses. I used this program for ~3 years in college to manage my finances. Written in Java and Java Swing for the UI." />
+<meta property="og:description" content="At the start of my coding experience (high school, 2016), I started a “business game” that I soon used to track my income and expenses. I used this program for ~3 years in college to manage my finances. Written in Java and Java Swing for the UI." />
+<link rel="canonical" href="https://tfreese56.github.io/java/2020/02/17/checkbook.html" />
+<meta property="og:url" content="https://tfreese56.github.io/java/2020/02/17/checkbook.html" />
+<meta property="og:site_name" content="Tyler F." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-17T08:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Checkbook" />
+<script type="application/ld+json">
+{"headline":"Checkbook","dateModified":"2020-02-17T08:00:00-06:00","datePublished":"2020-02-17T08:00:00-06:00","description":"At the start of my coding experience (high school, 2016), I started a “business game” that I soon used to track my income and expenses. I used this program for ~3 years in college to manage my finances. Written in Java and Java Swing for the UI.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tfreese56.github.io/java/2020/02/17/checkbook.html"},"url":"https://tfreese56.github.io/java/2020/02/17/checkbook.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://tfreese56.github.io/feed.xml" title="Tyler F." /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">Home</a><article>
+  <p class="post-meta">
+    <time datetime="2020-02-17 08:00:00 -0600">February 2020</time>
+  </p>
+  
+  <h1>Checkbook</h1>
+
+  <p>At the start of my coding experience (high school, 2016), I started a “business game” that I soon used to track my income and expenses. I used this program for ~3 years in college to manage my finances. Written in Java <img src="/img/java.png" style="width: 32px; height: 32px; display: inline-block;" /> and Java Swing for the UI.</p>
+
+<p><img src="/img/github.png" style="width: 32px; height: 32px; display: inline-block;" /> <a href="https://github.com/tfreese56/checkbook">Public GitHub repo</a> for this project.</p>
+
+<p>Below is the original goal I wrote for this program:</p>
+
+<blockquote>
+  <p>This application is built for taking transactions off of a regular checkbook page to analyze, organize, and visualize them. My intended use of this program is to provide a tool to maintain your financial situation by creating an interactive checkbook. This application uses your transaction data to answer any inquiries you may have about your money at any point in time.</p>
+</blockquote>
+
+<h3 id="program">Program</h3>
+<p>As you entered transactions, they would appear to the right in a queue ready to be saved.</p>
+
+<p><img src="/img/mainframe.PNG" alt="main frame" /></p>
+
+<p>The start of the inquiries I mentioned; the bargraph was printed out using a for loop. The Y axis was precalculated using the amounts queried.</p>
+
+<p><img src="/img/bargraph.png" alt="bargraph" /></p>
+
+<p>Finally, digging a little deeper, I put together “reports” like following.</p>
+
+<p><img src="/img/analysis.PNG" alt="analysis" /></p>
+
+<h3 id="usage-summary">Usage Summary</h3>
+<ul>
+  <li>View transactions in the IO tab as you add them</li>
+  <li>Save transactions in a central database</li>
+  <li>Load transactions from any period in time OR query ALL transactions stored for:
+    <ul>
+      <li>Displaying simple transaction data in the “Load Results” tab</li>
+      <li>View a bar graph of categorized amounts</li>
+      <li>View profit</li>
+      <li>Read a monthly analysis derived from transaction data</li>
+    </ul>
+  </li>
+  <li>Bring up transactions containing a key word</li>
+  <li>Edit transactions you may have messed up on entry</li>
+  <li>Delete unneeded transactions</li>
+</ul>
+
+<h3 id="ending">Ending</h3>
+<p>I learned a ton back then developing this project. I taught myself Java in hs and this was the product over time of that experience. At first, the data storage was simply text file IO; then it upgraded to a remote (self hosted) MySQL database after Database Management Systems in college.</p>
+
+<p>When my future scope came to this:</p>
+
+<blockquote>
+  <p>Thinking ahead, I would like to derive more information from transactions. Questions I want this program to answer are, “What period of time did I make the most money?” “When do I spend the most on fuel/food/entertainment/needs?” “Where did I spend most of my money the last three months?” Another future addition is a better graphing utility (possibly third party applications) that creates more visually appealing graphs of the data.</p>
+</blockquote>
+
+<p>I eventually concluded it was time for a different environment. Could the program have answered these questions, yes, but I thought the UI could improve the most. Gratefully, I <em>still</em> have each transaction saved since I started this. They’ve all made it through each migration of code and I can still query them today.</p>
+
+<p>Thanks for taking the time to read!</p>
+
+<p>Best.</p>
+
+<h5 id="links">Links</h5>
+<div style="font-size: 10px;">
+<a target="_blank" href="https://icons8.com/icon/13679/java">Java</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

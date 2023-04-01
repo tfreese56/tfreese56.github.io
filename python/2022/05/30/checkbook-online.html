@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Checkbook Online</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Checkbook Online" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Checkbook Online is my previous project, Checkbook, but a website version. I wanted to manage my money from a desktop or mobile device from anywhere. Thus, I migrated my Checkbook project to a Django-Python web application." />
+<meta property="og:description" content="Checkbook Online is my previous project, Checkbook, but a website version. I wanted to manage my money from a desktop or mobile device from anywhere. Thus, I migrated my Checkbook project to a Django-Python web application." />
+<link rel="canonical" href="https://tfreese56.github.io/python/2022/05/30/checkbook-online.html" />
+<meta property="og:url" content="https://tfreese56.github.io/python/2022/05/30/checkbook-online.html" />
+<meta property="og:site_name" content="Tyler F." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-30T09:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Checkbook Online" />
+<script type="application/ld+json">
+{"headline":"Checkbook Online","dateModified":"2022-05-30T09:00:00-05:00","datePublished":"2022-05-30T09:00:00-05:00","description":"Checkbook Online is my previous project, Checkbook, but a website version. I wanted to manage my money from a desktop or mobile device from anywhere. Thus, I migrated my Checkbook project to a Django-Python web application.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tfreese56.github.io/python/2022/05/30/checkbook-online.html"},"url":"https://tfreese56.github.io/python/2022/05/30/checkbook-online.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://tfreese56.github.io/feed.xml" title="Tyler F." /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">Home</a><article>
+  <p class="post-meta">
+    <time datetime="2022-05-30 09:00:00 -0500">May 2022</time>
+  </p>
+  
+  <h1>Checkbook Online</h1>
+
+  <p>Checkbook Online is my previous project, <a href="/java/2020/02/17/checkbook.html">Checkbook</a>, but a website version. I wanted to manage my money from a desktop or mobile device from anywhere. Thus, I migrated my Checkbook project to a Django-Python web application.</p>
+
+<p>Technical specifics: Two docker containers ran in the production environment, one for running Checkbook and one for a MySQL database.</p>
+
+<p>I used self-signed certificates with Nginx to secure the communication with TLSv1.3.</p>
+
+<h2 id="technologies">Technologies</h2>
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+<img src="/img/django.png" alt="django logo" />
+<img src="/img/python.png" alt="python logo" />
+<img src="/img/docker.png" alt="docker logo" />
+<img src="/img/mysql.png" alt="mysql logo" />
+</div>
+<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; justify-content: center;">
+<img src="/img/uwsgi-small.png" alt="uwsgi logo" style="margin: 5px; width: 84px; height: 45px;" />
+<img src="/img/nginx.png" alt="nginx logo" />
+<img src="/img/encrypt.png" alt="encrypt logo" />
+</div>
+</div>
+
+<h2 id="web-app">Web app</h2>
+
+<h3 id="index-page-moving-background-on-actual-site">Index page; (moving background on actual site)</h3>
+
+<p><img src="/img/tfcb-main.png" alt="tfcb main" /></p>
+
+<h3 id="home-page-shows-basic-current-information">Home page; shows basic current information</h3>
+
+<p><img src="/img/tfcb-home.png" alt="tfcb home" /></p>
+
+<h3 id="search-page-query-transactions-given-criteria">Search page; query transactions given criteria</h3>
+<p><em>Amounts and descriptions redacted.</em></p>
+
+<p><img src="/img/tfcb-search.png" alt="tfcb search" /></p>
+
+<h3 id="search-page-results">Search page results</h3>
+<p><em>Amounts, descriptions, and dates redacted.</em></p>
+
+<p>The following statistics could be generated over a specified time period.
+The number of transactions found is also reported.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Greatest income &amp; Largest expense
+
+Average gain/loss per transaction - divide profit out amongst all transactions
+
+Min/Max Subarrays - calculate (using min/max algorithm) the time period where the greatest gain and largest loss occurred
+</code></pre></div></div>
+
+<p><img src="/img/tfcb-search-results.png" alt="tfcb search results" /></p>
+
+<h2 id="demise">Demise</h2>
+
+<p>Recently (2023), I started using <a href="https://www.gnucash.org/">GnuCash</a>. GnuCash replaced this web application for managing my finances.</p>
+
+<p>GnuCash can do it all, more than I ever wanted in my program. So, I chose not to reinvent the wheel and migrate to GnuCash.</p>
+
+<p>I’ve successfully kept all of my transaction data since 2018 when I started managing my finances in college with <a href="/java/2020/02/17/checkbook.html">Checkbook</a>. I had over 1,000 transactions stored at the time of moving (Janurary 2023).</p>
+
+<h3 id="thanks">Thanks</h3>
+<p>Thank you for taking the time to read about my Checkbook online experience!</p>
+
+<p>Best.</p>
+
+<h5 id="links">Links</h5>
+<div style="font-size: 10px;">
+<a target="_blank" href="https://icons8.com/icon/XPdRFanRZtNK/django">Django</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://icons8.com/icon/13441/python">Python</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://icons8.com/icon/cdYUlRaag9G9/docker">Docker</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://icons8.com/icon/UFXRpPFebwa2/mysql-logo">MySQL Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br />
+<a target="_blank" href="https://www.nginx.com/wp-content/uploads/2018/08/NGINX-logo-rgb-large.png">Nginx</a>
+<br />
+<a target="_blank" href="https://pythonist.ru/wp-content/uploads/2020/05/uwsgi.jpg">uWSGI</a>
+</div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
