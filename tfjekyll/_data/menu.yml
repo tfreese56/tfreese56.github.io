@@ -6,18 +6,18 @@ entries:
     entries:
       - detail: problem solving programming & full stack development
       - detail: enjoy studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
-      - detail: from the midwest (<img src="/img/iowa.png" class="inline-icon"/>)
+      - detail: from the midwest <img src="/img/iowa.png" class="inline-icon"/>
 #      - detail: github repo
 #        url: https://github.com/tfreese56
-      - detail: studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" class="inline-icon"/>
+#      - detail: studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" class="inline-icon"/>
       - detail: <img src="/img/double-right.gif" class="inline-icon"/>  more...
         url: about
 
-  - title: tech interests 
+  - title: experience in
     entries:
-      - detail: developing full stack, cross-platform apps
-      - detail: writing efficient, organized code
-      - detail: information security & cryptography
+      - detail: development & IT for a small business (<a href="/vue/2022/12/01/coolr.html">Coolr</a>)
+      - detail: information security with <img src="/img/splunk.png" class="menu-logo"/> 
+      - detail: small team app development (<a href="/wgh/2019/01/31/whats-good-here.html">What's Good Here?</a>)
 
   - title: top software projects
     post_list:
@@ -28,9 +28,9 @@ entries:
 
   - title: development mindset 
     entries:
-        - detail: solution oriented -> iterative progress
-        - detail: don't be too clever -> write code that's quickly understood again someday
-        - detail: security & sandboxing -> keep the hacker in mind
+        - detail: solution oriented
+        - detail: write code that's quickly understood again
+        - detail: security & sandboxing; keep the hacker in mind
 
   - title: development skills
     entries:
@@ -41,15 +41,21 @@ entries:
           - detail: <img src="/img/django.png" class="inline-icon"/> <img src="/img/docker.png" class="inline-icon"/> <img src="/img/github.png" class="inline-icon"/>
       - detail: databases
         entries:
-          - detail: <img src="/img/mysql-small.png" class="menu-logo"/> <img src="/img/sqlite-small.png" class="menu-logo"/> <img src="/img/mongodb-small.png" class="menu-logo"/>
+          - detail: <img src="/img/mongodb-small.png" class="menu-logo"/> <img src="/img/mysql-small.png" class="menu-logo"/> <img src="/img/sqlite-small.png" class="menu-logo"/> 
       - detail: technologies
         entries:
           - detail: <img src="/img/vue-small.png" class="menu-logo"/> <img src="/img/ionic-small.png" class="menu-logo"/>
           - detail: <img src="/img/nodejs-small.png" class="menu-logo"/> <img src="/img/expressjs-small.png" class="menu-logo"/>
           - detail: <img src="/img/nginx.png" class="menu-logo"/> 
-      - detail: programs 
+      - detail: programs
         entries:
           - detail: <img src="/img/splunk.png" class="menu-logo"/> 
+
+  - title: tech interests 
+    entries:
+      - detail: developing full stack applications
+      - detail: writing efficient and organized code
+      - detail: information security & cryptography
 
   - title: connect
     entries:
