@@ -4,11 +4,13 @@ title:  "Checkbook Online"
 subtitle: "Django-Python website for managing finances"
 thumbnail: "/img/tfcb-main.png"
 date:   2022-05-30 08:00:00 -0600
-categories: django
+categories: python 
+tags: Python
+technologies: python django
 ---
-[Checkbook](/java/2020/02/17/checkbook.html) but a website version. I wanted to manage my money from a desktop & mobile device from anywhere. Thus, I migrated my Checkbook project to a Django web application built with the following technologies.
+Checkbook Online is my previous project, [Checkbook](/java/2020/02/17/checkbook.html), but a website version. I wanted to manage my money from a desktop or mobile device from anywhere. Thus, I migrated my Checkbook project to a Django-Python web application.
 
-Two docker containers ran in the production environment: one for running Checkbook and one for a MySQL database.
+Technical specifics: Two docker containers ran in the production environment, one for running Checkbook and one for a MySQL database.
 
 I used self-signed certificates with Nginx to secure the communication with TLSv1.3.
 
@@ -48,12 +50,11 @@ I used self-signed certificates with Nginx to secure the communication with TLSv
 The following statistics could be generated over a specified time period.
 The number of transactions found is also reported.
 ```
-Greatest income - largest value of income received during time frame
-Largest expense - largest expense in value spent during time frame
+Greatest income & Largest expense
 
 Average gain/loss per transaction - divide profit out amongst all transactions
 
-From DATE to DATE you {made, lost} the most money - calculating using a min/max algorithm the time period where the greatest gain and loss occur
+Min/Max Subarrays - calculate (using min/max algorithm) the time period where the greatest gain and largest loss occurred
 ```
 
 <img src="/img/tfcb-search-results.png" alt="tfcb search results"/>
@@ -61,11 +62,11 @@ From DATE to DATE you {made, lost} the most money - calculating using a min/max 
 
 ## Demise
 
-Recently (2023), I started using [GnuCash](https://www.gnucash.org/) which replaced this web application for managing my finances. 
+Recently (2023), I started using [GnuCash](https://www.gnucash.org/). GnuCash replaced this web application for managing my finances. 
 
-GnuCash can do it all, all that I ever wanted in my program. So, I chose to not reinvent the wheel and migrate to GnuCash.
+GnuCash can do it all, more than I ever wanted in my program. So, I chose not to reinvent the wheel and migrate to GnuCash.
 
-I successfully migrated all of my transaction data stored since 2018 when I embarked on managing my finances in college. Had over 1,000 transactions stored at the time of moving (Janurary 2023).
+I've successfully kept all of my transaction data since 2018 when I started managing my finances in college with [Checkbook](/java/2020/02/17/checkbook.html). I had over 1,000 transactions stored at the time of moving (Janurary 2023).
 
 
 ### Thanks

@@ -1,35 +1,35 @@
 ---
 layout: aboutpage
 title: About
+description: "Hi! A bit more about me."
 permalink: /about/
 ---
-Hi! A bit more about me.
+I really enjoy exploring and implementing ideas; ideas that make life easier by solving problems.
 
-## What you already know
-
-* problem solving programming & full stack development
-* from the midwest (<img src="/img/iowa.png" class="inline-icon"/>)
-* studied at Buena Vista University in Storm Lake, IA <img src="/img/beaver.png" class="inline-icon"/>
-  * Computer Science & Mathematics
-* enjoy the experience studying how things work <img src="/img/critical-thinking.png" class="inline-icon"/>
+I always wonder "How?" and "Why?".
 
 ## What's more
 
-### I spend free time reading books.
+### Exploring
+
+<img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>contributing to an open source project
+
+<img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>Double Ratchet algorithm from Signal <img src="/img/signal-app.png" class="inline-icon"/>
+
+<img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>the next place I want to go see the ocean <img src="/img/ocean.png" class="inline-icon"/>
+
+
+### I spend free time reading books
 
 Some of my favorites:
-* *12 Rules for Life* by Jordan Peterson
 * *The Code Book* by Simon Singh
-* *Can't Hurt Me* by David Goggins
 * *The Man Who Loved Only Numbers* by Paul Hoffman
-* *The Power of Myth* by Joseph Campbell
-
-And finally, in a class of their own, works by Douglas Hofstadter:
-* *Gödel, Escher, Bach: an Eternal Golden Braid*
-* *I Am a Strange Loop*
+* *Gödel, Escher, Bach: an Eternal Golden Braid* by Douglas Hofstadter
 
 ### I have traveled to Dominican Republic, Seattle, WA & New Zealand
-<img src="/img/dominican-republic.png" class="inline-icon"/>&nbsp;Dominican Republic was with a great friend in high school and his parents. Very thankful for this experience.
+
+### Dominican Republic 
+<img src="/img/dominican-republic.png" class="inline-icon"/>&nbsp;I went on this trip with a great friend and his family in high school. We stayed on the beach and did daily excursions.
 <div class="about-images">
 <img class="myImg" src="/img/dr1.jpg" alt="Dominican Republic beach" style="width:100%;max-width:300px;">
 <img class="myImg" src="/img/dr2.jpg" alt="Dominican Republic driving go kart in the mud" style="width:100%;max-width:300px;">
@@ -42,45 +42,49 @@ And finally, in a class of their own, works by Douglas Hofstadter:
 </div>
 
 
-<img src="/img/space-needle.png" class="inline-icon"/>&nbsp;Seattle, Washington was on behalf of being selected to be part of a six student team of developers. In Seattle, we made an app with the help of two professors over the course of two and a half weeks. We lived and breathed Seattle visiting tourist sites and visiting tech companies. [School news article](https://www.bvu.edu/news/startup-seattle-lands-bvu-students-google-microsoft-amazon-and-more) about the trip.
+### Seattle, WA 
+<img src="/img/space-needle.png" class="inline-icon"/>&nbsp;I was selected to be part of a six student team of developers going on a trip to build an app in Seattle. Over the course of two and a half weeks, [we built our restaurant and food rating app and used it all through the city.](/wgh/2019/01/31/whats-good-here.html) We lived and breathed the Seattle tech lifestyle. In addition to developing, we got to visit and chat with current employees at tech companies. For our spare time, we visited tourist sites and hiked in the Cascade mountains. 
+
+Read more about it in the [school news article.](https://www.bvu.edu/news/startup-seattle-lands-bvu-students-google-microsoft-amazon-and-more)
 <div class="about-images">
 <img class="myImg" src="/img/seattle1.jpg" alt="Seattle cityscape behind me" style="width:100%;max-width:300px;">
 <img class="myImg" src="/img/seattle2.jpg" alt="Seattle hiking trip" style="width:100%;max-width:300px;">
 </div>
 
-<img src="/img/new-zealand.png" class="inline-icon"/>&nbsp;New Zealand is easily the trip of a life time. Again, spent two and a half weeks with fellow college classmates and two professors traveling from Auckland, NZ to Queensland, NZ. I can't put what this trip means to me into words. This opportunity was incredible and I cannot wait to go back some day.
+### New Zealand 
+<img src="/img/new-zealand.png" class="inline-icon"/>&nbsp;This is easily the trip of a life time. I spent two and a half weeks with fellow college classmates and two professors traveling from Auckland, NZ to Queenstown, NZ. This opportunity was incredible and I cannot wait to go back some day.
 <div class="about-images">
 <img class="myImg" src="/img/nz1.jpg" alt="New Zealand road trip" style="width:100%;max-width:300px;">
 <img class="myImg" src="/img/nz2.jpg" alt="Auckland, New Zealand behind me" style="width:100%;max-width:300px;">
 </div>
 
 ### I enjoy finances
-<img src="/img/cash.gif" class="inline-icon"/>&nbsp;I've always been interested in personal finance and money. To me, money is a tool to go cool places like ^^ and expand oneself. I believe money makes you more of what you already are. 
+<img src="/img/cash.gif" class="inline-icon"/>&nbsp;I've always been interested in personal finance and money. To me, money is a tool to go cool places like ^^.
 
-I use [GnuCash](https://www.gnucash.org/) to manage my personal finances; really awesome in-depth program.
+I use [GnuCash](https://www.gnucash.org/) to manage my personal finances; a really awesome, in-depth program.
 
 
+<!---
 ### I rode dirtbikes
 Riding dirtbikes was a huge past time of mine when I was younger.
 <div style="display: flex; flex-direction: row;">
 <img class="myImg" src="/img/dirtbike1.jpg" alt="Jumping my dirtbike" style="width:100%;max-width:300px;">
 </div>
+-->
 
 
-### Sat-Chit-Ananda
+### Thanks!
 Thanks for at least scrolling this far!
 
-I'm super grateful for all I've poured into life so far. My goal is to keep moving towards greater things that will take me places and teach me ways I never knew before. 
-
-<blockquote>"You can never represent yourself totally .... to seek self-knowledge is to embark on a journey which ... will always be incomplete, cannot be charted on a map, will never halt, cannot be described." ~ Douglas Hofstadter</blockquote>
+My goal is to keep moving towards greater goals and experiences beyond what I knew I could do.
 
 ##### Links
 <div style="font-size: 10px;">
-<a target="_blank" href="https://icons8.com/icon/119937/iowa">Iowa</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/fMenVV76fHtn/%3E">></a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>
-<a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/D0PCZVHfUBQL/ocean">Ocean</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>
-<a target="_blank" href="https://icons8.com/icon/54383/critical-thinking">Critical Thinking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/gQ4NaXzMSLil/signal-app">Signal App</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>
 <a target="_blank" href="https://icons8.com/icon/37270/dominican-republic">Dominican Republic</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>

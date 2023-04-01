@@ -5,6 +5,8 @@ date:   2021-03-04 08:00:00 -0600
 subtitle: "Sending Events to a Stream Processor"
 thumbnail: "/img/radio-waves.png"
 categories: java 
+tags: Java
+technologies: java
 ---
 <link rel="stylesheet" href="/css/styles.css">
 Stream Emitter emits events logged from a desired source to the [Stream Processor](/java/2021/03/26/stream-processor.html).
@@ -21,7 +23,7 @@ The Stream Emitter also needs implemented by the developer. Here, the developer 
 Once an Event is created, the Stream Emitter will handle buffering and communicating with the Stream Processor. These two may be on the same machine or different machines. There can be several Stream Emitters emitting to one Stream Processor, or multiple. The two have a many to many relationship.
 
 ### Thanks
-There's no much to this one, however, it warranted its own explanation!
+There's not much to this one, however, it warranted its own explanation!
 
 Best.
 

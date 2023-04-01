@@ -5,13 +5,15 @@ subtitle: "Building a stream processor"
 thumbnail: "/img/data-stream.gif"
 date:   2021-03-26 08:00:00 -0600
 categories: java 
+tags: Showcase Java
+technologies: java
 ---
 <link rel="stylesheet" href="/css/styles.css">
 Inspired by my work in Information Security with <img src="/img/splunk.png" id="splunk-icon"/>, I built a Stream Processor for my capstone project.
 
 My Stream Processor can handle a continuous stream of events, parse, then alert on a desired event in the stream.
 
-Extensible code was my main focus for developing this. At finish, the code product was ready to be extended by a developer who has a need for a Stream Processor. The processing Operator nodes are abstract and need to be implemented. Thus, the processing code of this Stream Processor is arbitrary. With this, one can create a workflow of operators they see fit their stream of data.
+Extensible code was one of my main focuses developing this project. The main extensible part of the finished project is the workflow processing code. With this, one can create a workflow of operators that fit their unique stream of data.
 
 Programming language: Java <img src="/img/java.png" class="inline-icon" style="width: 64px; height: 64px;"/>
 
@@ -24,7 +26,7 @@ Think of the following\*:
 
 
 ## Design
-The following visualization best fits my Stream Processor design. A stream of data sent to parallel nodes sending output to operators.
+The following visualization\* best fits my Stream Processor design. A stream of data sent to parallel nodes sending output to operators.
 
 <img src="/img/sp-design.png" alt="sp design" style="width: 50%; height: 50%;"/>
 
@@ -34,10 +36,10 @@ My Stream Processor has the following capabilities\*:
 <img src="/img/sp-summary.png" alt="sp summary"/>
 
 ### Ingest Data from Anywhere
-Data can be retrieved in theoretically any way. The only requirement is it needs to be ingested into the Stream Processor from the [Stream Emitter](/java/2021/03/04/stream-emitter.html). Structured or unstructured, what matters is getting the data to the Stream Processor. From there, it is up to the processing engine to process it.
+Data can be retrieved from anywhere data is generated. The only requirement is it needs to be ingested into the Stream Processor from the [Stream Emitter](/java/2021/03/04/stream-emitter.html). Structured or unstructured, what matters is getting the data to the Stream Processor. From there, it is up to the processing engine to process it.
 
 ### Arbitrary Processing Code
-Implementing this Stream Processor is on the developer to implement their workflow. Workflows and processing is specific to each stream of data. Thus, the reason I wanted to write an extensible product.
+A developer can write their own workflow using this Stream Processor.
 
 What does arbitrary processing code mean, *exactly*?
 
@@ -45,7 +47,7 @@ What does arbitrary processing code mean, *exactly*?
 
 <img src="/img/fish.png" class="inline-icon" style="width: 32px; height: 32px;"/> *You* may want to process how many fish swim by your laser sensor in the lake on two different sides on average per hour. 
 
-Our needs are not the same, but we can *both* use my Stream Processor to handle our scenarios. The code we write to process our data will not be the same.
+Our needs are not the same, but we can *both* extend and use my Stream Processor to handle our scenarios. The code we write to process our data will not be the same.
 
 ### Parallel Tasks
 My Stream Processor has the ability to have concurrent threads working on the same task. Each one would be assigned data that came into the Stream Processor. Working with out of order data was out of the scope of this project, although, it would be a concern for a real scenario.

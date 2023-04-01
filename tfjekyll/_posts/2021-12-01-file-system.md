@@ -5,6 +5,8 @@ subtitle: "A file system storing data"
 thumbnail: "/img/hdd.png"
 date:   2021-12-01 08:00:00 -0600
 categories: c 
+tags: C
+technologies: c
 ---
 <link rel="stylesheet" href="/css/styles.css">
 This is an implementation of a file system by the parameters specified by [Dr. Nathan Backman](https://www.bvu.edu/academics/faculty/nathan-backman) of [Buena Vista University](https://www.bvu.edu/).
@@ -36,11 +38,11 @@ As I rewrote the code, I wrote out a test suite extending the one we were provid
 * many more...
 
 ## Greatest Challenge
-The algorithms to handle free file system blocks, giving them to files and restoring them to a free state was a significant challenge. 
+The algorithms to handle free file system blocks (providing them to files and restoring them to a free state) was a significant challenge. 
 
-I'd also say closing (destroy) the active *real* file and reopening it was challenging. This required a successful exit storing data so the next time it was opened, the file system can leave off right where it needs to.
+I'd also say closing (destroying) the active *real* file and reopening it was challenging. This required a successful exit process storing data so the next time it was opened, the file system can resume right where it left off.
 
-After much testing, I was curious what more I could do with this established, working file system storage system I had. 
+After much testing, I was curious what more I could do with this established, working file system I had. 
 
 So, I turned it into an [Encrypted File System](/c/2021/12/11/tfs-cwad.html). <img src="/img/encrypt.png" alt="encrypted icon" class="inline-icon"/>
 

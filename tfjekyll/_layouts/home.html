@@ -8,7 +8,11 @@ layout: default
     <p style="text-align: center;">{{ site.description }}</p>
   {%-endif-%}
 </header>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/menu-logo.css">
 
 {%-include menu_item.html collection=site.data.menu.entries-%}
 
 {{ content }}
+
+<h5><a href="/links">Links to icons & logos</a></h5>
