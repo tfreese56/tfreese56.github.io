@@ -1,32 +1,37 @@
 ---
 layout: aboutpage
 title: About
-description: "Hi! A bit more about me."
+description: "A bit more about me."
 permalink: /about/
 ---
 I really enjoy exploring and implementing ideas; ideas that make life easier by solving problems.
 
 I always wonder "How?" and "Why?".
 
-## What's more
+Graduated from [Buena Vista University](https://www.bvu.edu/) <img src="/img/beaver.png" alt="beaver logo" class="inline-icon"/>
 
-### Exploring
+## Exploring
 
 <img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>contributing to an open source project
 
-<img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>Double Ratchet algorithm from Signal <img src="/img/signal-app.png" class="inline-icon"/>
+<img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>the Double Ratchet algorithm from Signal <img src="/img/signal-app.png" class="inline-icon"/>
 
-<img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>the next place I want to go see the ocean <img src="/img/ocean.png" class="inline-icon"/>
+<img src="https://img.icons8.com/external-soleicons-solid-amoghdesign/68/null/external--soleicons-solid-vol-1-soleicons-solid-amoghdesign.png" class="inline-icon" style="padding-left: 15px; padding-right: 10px;"/>where I want to see the ocean next <img src="/img/ocean.png" class="inline-icon"/>
 
 
-### I spend free time reading books
+## I spend free time reading books
 
 Some of my favorites:
 * *The Code Book* by Simon Singh
 * *The Man Who Loved Only Numbers* by Paul Hoffman
 * *Gödel, Escher, Bach: an Eternal Golden Braid* by Douglas Hofstadter
 
-### I have traveled to Dominican Republic, Seattle, WA & New Zealand
+## I enjoy finances
+<img src="/img/cash.gif" class="inline-icon"/>&nbsp;I've always been interested in personal finance and money. To me, money is a tool to go cool places like you'll see next below.
+
+I use [GnuCash](https://www.gnucash.org/) to manage my personal finances; a really awesome, in-depth program.
+
+## I have traveled to Dominican Republic, Seattle, WA & New Zealand
 
 ### Dominican Republic 
 <img src="/img/dominican-republic.png" class="inline-icon"/>&nbsp;I went on this trip with a great friend and his family in high school. We stayed on the beach and did daily excursions.
@@ -43,7 +48,7 @@ Some of my favorites:
 
 
 ### Seattle, WA 
-<img src="/img/space-needle.png" class="inline-icon"/>&nbsp;I was selected to be part of a six student team of developers going on a trip to build an app in Seattle. Over the course of two and a half weeks, [we built our restaurant and food rating app and used it all through the city.](/wgh/2019/01/31/whats-good-here.html) We lived and breathed the Seattle tech lifestyle. In addition to developing, we got to visit and chat with current employees at tech companies. For our spare time, we visited tourist sites and hiked in the Cascade mountains. 
+<img src="/img/space-needle.png" class="inline-icon"/>&nbsp;I was selected to be part of a six student team of developers going on a trip to build an app in Seattle. Over the course of two and a half weeks, [we built our restaurant and food rating app and used it all through the city.](/wgh/2019/01/31/whats-good-here.html) We lived and breathed the Seattle tech lifestyle. In addition to developing, we interviewed and chatted with current employees at tech companies. For our spare time, we visited tourist sites and hiked in the Cascade mountains. 
 
 Read more about it in the [school news article.](https://www.bvu.edu/news/startup-seattle-lands-bvu-students-google-microsoft-amazon-and-more)
 <div class="about-images">
@@ -58,11 +63,6 @@ Read more about it in the [school news article.](https://www.bvu.edu/news/startu
 <img class="myImg" src="/img/nz2.jpg" alt="Auckland, New Zealand behind me" style="width:100%;max-width:300px;">
 </div>
 
-### I enjoy finances
-<img src="/img/cash.gif" class="inline-icon"/>&nbsp;I've always been interested in personal finance and money. To me, money is a tool to go cool places like ^^.
-
-I use [GnuCash](https://www.gnucash.org/) to manage my personal finances; a really awesome, in-depth program.
-
 
 <!---
 ### I rode dirtbikes
@@ -73,13 +73,15 @@ Riding dirtbikes was a huge past time of mine when I was younger.
 -->
 
 
-### Thanks!
+## Thanks!
 Thanks for at least scrolling this far!
 
 My goal is to keep moving towards greater goals and experiences beyond what I knew I could do.
 
 ##### Links
 <div style="font-size: 10px;">
+<a target="_blank" href="https://icons8.com/icon/73aABFv7KJOX/beaver">Beaver</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br/>
 <a target="_blank" href="https://icons8.com/icon/fMenVV76fHtn/%3E">></a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <br/>
 <a target="_blank" href="https://icons8.com/icon/D0PCZVHfUBQL/ocean">Ocean</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
